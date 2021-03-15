@@ -1,13 +1,10 @@
-
-[hello](example1.md)
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.13/Tone.js" integrity="sha512-SAB2YrHeaZfb6W1w+tAMm+IUICzUMyf7TJ8upY+NjLYl8jseufUW4yYzoSHfNL9N2rzDlw5PWJrf7rPIQ6VhNw==" crossorigin="anonymous"></script>
-
-<script src="index.js"></script>
-
-<button id="play">Play Example</button>
-
-<script>
-document.getElementById("play").addEventListener("click", () => play());
-</script>
+<div class="grid-container">
+  <div class="Example-1"></div>
+  <div class="Example-2"></div>
+  <div class="Example-3"></div>
+  <div class="Example-4"></div>
+  <div class="Example-5"></div>
+  <div class="Example-6"></div>
+  <div class="Example-7"></div>
+  <div class="Example-8"></div>
+</div>

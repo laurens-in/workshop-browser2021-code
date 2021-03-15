@@ -99,3 +99,26 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+
+
+/* grid layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Example-1 Example-2 Example-3 Example-4"
+      "Example-5 Example-6 Example-7 Example-8"
+      ". . . .";
+  }
+  .Example-1 { grid-area: Example-1; }
+  .Example-2 { grid-area: Example-2; }
+  .Example-3 { grid-area: Example-3; }
+  .Example-4 { grid-area: Example-4; }
+  .Example-5 { grid-area: Example-5; }
+  .Example-6 { grid-area: Example-6; }
+  .Example-7 { grid-area: Example-7; }
+  .Example-8 { grid-area: Example-8; }
