@@ -1,0 +1,106 @@
+---
+
+---
+
+@import "minima";
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
+
+body {
+    color: #ddd;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+.page-link {
+    color: #fa8072 !important;
+}
+.site-title, .site-title:visited {
+    color: #fa8072;
+}
+
+h1, h2, h3 {
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+
+a:link, a:visited {
+  color: #fa8072;
+  //font-style: italic;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.site-nav {
+  background-color: #1a1a1a;
+  border-color: #000000;
+  border-radius: 0px;
+}
+
+.site-header {
+  border-bottom: 2px solid #000000;
+}
+
+.site-nav .menu-icon > svg {
+  fill: #fa8072;
+}
+
+.highlight {
+  background: #171717 !important;
+}
+
+pre, code {
+  background-color: #171717;
+  border: 1px solid #fa8072;
+}
+
+span.kd {
+  color: #afafff;
+}
+
+span.k {
+  color: #ffaeea;
+}
+
+span.nx {
+  color: #fa8072;
+}
+
+.footnotes {
+  overflow-wrap: break-word;
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin-bottom: 2rem;
+}
+.video-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+figure {
+  display: grid;
+  width: 100%;
+}
+
+audio {
+  background-color: rgba(117, 30, 30, 0.849);
+  width: 100%;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: rgba(0,0,0,0);
+}
+
+figcaption {
+  font-style: italic;
+  text-align: right;
+}
