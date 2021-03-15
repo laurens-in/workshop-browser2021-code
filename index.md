@@ -6,6 +6,8 @@
 
 <script src="index.js"></script>
 
+<button id="play">Play Example</button>
+
 <script>
-play();
+document.getElementById("play").onClick = play();
 </script>
