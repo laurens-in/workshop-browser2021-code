@@ -39,11 +39,11 @@ a:link, a:visited {
 
 a:hover {
   color: rgb(255, 0, 0);
-}s
+}
 
 .site-nav {
   background-color: black !important;
-  border-color: #000000;
+  border-color: $font-color;
   border-radius: 0px;
 }
 
