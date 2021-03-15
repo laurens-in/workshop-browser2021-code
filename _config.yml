@@ -1,0 +1,15 @@
+
+title: "Workshop BROWSER2021 Code"
+author: "Laurens Inauen"
+email: "laurens.hwm@gmail.com"
+description: Computational Thinking in Composition.
+theme: minima
+skin: dark
+header_pages:
+  - index.html
+  - example1.html
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+github_username: laurens-in
+instagram_username: iiaurens
