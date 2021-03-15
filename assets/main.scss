@@ -4,6 +4,11 @@
 
 @import "minima";
 
+$background-color: #191919;
+$font-color: #00FFFF;
+$alternate-color: lightsalmon;
+
+
 
 body {
     color: #ddd;
@@ -12,10 +17,10 @@ body {
   }
 
 .page-link {
-    color: #fa8072 !important;
+    color: $alternate-color!important;
 }
 .site-title, .site-title:visited {
-    color: #fa8072;
+    color: $font-color;
 }
 
 a:link, a:visited {
@@ -28,7 +33,7 @@ a:hover {
 }
 
 .site-nav {
-  background-color: #1a1a1a;
+  background-color: $background-color;
   border-color: #000000;
   border-radius: 0px;
 }
@@ -38,7 +43,7 @@ a:hover {
 }
 
 .site-nav .menu-icon > svg {
-  fill: #fa8072;
+  fill: $font-color;
 }
 
 .highlight {
@@ -47,19 +52,19 @@ a:hover {
 
 pre, code {
   background-color: #171717;
-  border: 1px solid #fa8072;
+  border: 1px solid $font-color;
 }
 
 span.kd {
-  color: #afafff;
+  color: #70e205;
 }
 
 span.k {
-  color: #ffaeea;
+  color: #00c742;
 }
 
 span.nx {
-  color: #fa8072;
+  color: #1869ff;
 }
 
 .footnotes {
@@ -87,7 +92,6 @@ figure {
 }
 
 audio {
-  background-color: rgba(117, 30, 30, 0.849);
   width: 100%;
 }
 
@@ -127,5 +131,5 @@ figcaption {
       background-color: rgba(255,255,255,0.3);
       text-align: center;
       font-weight: bold;
-      color: salmon;
+      color: $font-color
   }
