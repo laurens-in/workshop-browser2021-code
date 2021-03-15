@@ -42,7 +42,7 @@ a:hover {
 }s
 
 .site-nav {
-  background-color: $background-color;
+  background-color: black !important;
   border-color: #000000;
   border-radius: 0px;
 }
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .site-nav .menu-icon > svg {
-  fill: black;
+  fill: $font-color;
 }
 
 .highlight {
