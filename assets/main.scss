@@ -5,6 +5,7 @@
 @import "minima";
 
 $background-color: #191919;
+$light-background: #252525;
 $font-color: #00FFFF;
 $alternate-color: lightsalmon;
 
@@ -47,11 +48,11 @@ a:hover {
 }
 
 .highlight {
-  background: #171717 !important;
+  background: $light-background !important;
 }
 
 pre, code {
-  background-color: #171717;
+  background-color: $light-background;
   border: 1px solid $font-color;
 }
 
