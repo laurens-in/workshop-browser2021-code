@@ -12,7 +12,7 @@ $alternate-color: lightsalmon;
 
 body {
     color: #ddd;
-    background-color: #1a1a1a;
+    background-color: $background-color;
     font-family: Arial, Helvetica, sans-serif !important;
   }
 
@@ -24,13 +24,13 @@ body {
 }
 
 a:link, a:visited {
-  color: #fa8072;
+  color: $font-color;
   //font-style: italic;
 }
 
 a:hover {
   color: rgb(255, 0, 0);
-}
+}s
 
 .site-nav {
   background-color: $background-color;
