@@ -9,5 +9,5 @@
 <button id="play">Play Example</button>
 
 <script>
-document.getElementById("play").onClick = play();
+document.getElementById("play").addEventListener("click", () => play());
 </script>
