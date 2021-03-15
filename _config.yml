@@ -6,8 +6,8 @@ description: Computational Thinking in Composition.
 theme: minima
 skin: dark
 header_pages:
-  - index.html
-  - example1.html
+  - index.md
+  - example1.md
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
