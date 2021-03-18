@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Why The Browser
-permalink: /why-the-browser/
+permalink: /why-the-browser
 ---
 
 # Why should we make music in the browser?

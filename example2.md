@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pattern Matching
-permalink: /example-2/
+permalink: /example-2
 ---
 
 <script src="https://unpkg.com/z" crossorigin="anonymous"></script>
