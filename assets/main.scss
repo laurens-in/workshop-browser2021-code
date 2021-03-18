@@ -42,7 +42,7 @@ a:hover {
 }
 
 .site-nav {
-  background-color: black !important;
+  background-color: $background-color !important;
   border-color: $font-color;
   border-radius: 0px;
 }
@@ -111,6 +111,11 @@ audio::-webkit-media-controls-enclosure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+
+img {
+  display: center;
+  margin: auto;
 }
 
 
