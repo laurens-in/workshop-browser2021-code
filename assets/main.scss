@@ -35,7 +35,7 @@ a:link, a:visited {
 }
 
 a:hover {
-  color: rgb(255, 0, 0);
+  color: $alternate-color;
 }
 
 .site-nav {
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .page-link {
-  color: $font-color;
+  color: $font-color !important;
 }
 
 pre, code {
