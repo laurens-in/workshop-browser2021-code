@@ -1,3 +1,9 @@
+---
+layout: page
+title: Why The Browser
+permalink: /why-the-browser/
+---
+
 # Why should we make music in the browser?
 
 ## Part 1 - McLuhan

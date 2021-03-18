@@ -7,7 +7,7 @@ theme: minima
 skin: dark
 header_pages:
   - index.md
-  - example1.md
+  - examples.md
   - text.md
 plugins:
  - jekyll-feed
