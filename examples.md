@@ -7,7 +7,7 @@ permalink: /example-overview
 
 <div class="grid-container">
   <div class="Example-1 grid-element"><a href="example1.html">Example1</a></div>
-  <div class="Example-2 grid-element"><a href="/example2">Example1</a></div>
+  <div class="Example-2 grid-element"><a href="{{ "/example2" | prepend: site.baseurl }}">Example2</a></div>
   <div class="Example-3 grid-element">Example 3</div>
   <div class="Example-4 grid-element">Example 4</div>
   <div class="Example-5 grid-element">Example 5</div>
