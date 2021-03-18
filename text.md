@@ -6,6 +6,8 @@ permalink: /why-the-browser/
 
 # Why should we make music in the browser?
 
+I will look at this question from three different angles, through three different quotes of three different theorists.
+
 ## Part 1 - McLuhan
 
 To find a question to this answer we can look one of the most important quotes of modern media theory.
@@ -24,6 +26,8 @@ First: The medium through which we express our art matters. A vinyl record is so
 
 Second: If certain media allows us to express things that others don't, then we can also create new forms of art through new media/technologies. Again this is very obvious: Electronic music can only exist because we have devices that are capable of producing electronic sounds.
 
+If we strive to push art to its boundaries, the engagement with contemporary technology - or refusal thereof - becomes almost a necessity.
+
 `Based on some other canadian dude that says basically that a society is defined by the way it communicates, this is in the podcast, listen to it again.`
 
 Media and message aren't exactly opposites or mutually exclusive: A medium can always become a message in another context. Think about this example: A score can be a medium in which music is the message. Music then again can be a medium through which we can express emotions or abstract ideas.
@@ -32,9 +36,15 @@ In our current situation I'm interested in the following relationship between me
 
 ![medium-message](images/medium-message.svg)
 
+Not because the browser is not interesting or important, but because code is the foundation through which we compose music in the browser. The browser has a great importance in our life. Its the portal through which we access the internet, so much so that for a lot of people its synonymous with the internet. But many of the layers that the browser adds to our composition process are of political or social nature, not so much compositional. Sure the browser allows us to make systems that are distributed over a network - and this is of course very interesting - but these connected nodes (or whatever you want to call them) are still defined through code. But in addition to that, the browser is also the reason why we have to use JavaScript, which again has huge implications on the way we write code and I will talk about that a bit later.
+
 ## Part 2 - Benjamin
 
+soundwalks
+
 ## Part 3 - Adorno
+
+power structures
 
 
 
