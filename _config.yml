@@ -8,8 +8,9 @@ skin: dark
 header_pages:
   - index.md
   - example1.md
+  - text.md
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
 github_username: laurens-in
-instagram_username: iiaurens
+#instagram_username: iiaurens
