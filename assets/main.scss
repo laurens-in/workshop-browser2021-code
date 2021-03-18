@@ -56,6 +56,10 @@ a:hover {
   background: $light-background !important;
 }
 
+.page-link {
+  color: $font-color;
+}
+
 pre, code {
   background-color: $light-background;
   border: 1px solid $font-color;
