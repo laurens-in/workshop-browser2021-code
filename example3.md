@@ -8,6 +8,6 @@ permalink: /example-3
 
 <script>
 
-console.log(CryptoJS.MD5("Message"))
+console.log(CryptoJS.MD5("Message").toString(CryptoJS.enc.Hex))
 
 </script>
