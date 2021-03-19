@@ -14,7 +14,7 @@ To find a question to this answer we can look one of the most important quotes o
 
 > The medium is the message.
 
-\- *Marshall McLuhan*
+{:.caption} \- Marshall McLuhan
 
 This quote is the essence of what media theory is about. While McLuhan certainly doesn't think the medium is the **whole** message, he states that the effect of the medium is by far greater than that of its content, which is merely incidental. As he says: The fact that we have the technology of TV has a tremendous effect on the world, how we communicate and how we ultimately develop as a society and individuals. What we print doesn't as matter as much as the printed word. The existence of the telephone affects everyone, what you say on the telephone affects very few people.
 
