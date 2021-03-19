@@ -31,7 +31,7 @@ If we strive to push art to its boundaries, the engagement with contemporary tec
 
 `Based on some other canadian dude that says basically that a society is defined by the way it communicates, this is in the podcast, listen to it again.`
 
-This is where media art comes into play. **write about media art here...**
+This is where media art comes into play. Media art - at least in my understanding of the term - is art that reflects its media. This reflection offers us insight about the specific medium that is used in some kind of way. If we look at Nam June Paiks **Random Access Music** we can see exactly that. The visitor can move the playback head across the tape in any way, which not only produces new kinds of sounds, but also breaks with the way we usually use tape.
 
 ![Nam June Paik - Tape](images/nam-june-paik-tape.jpeg)
 
