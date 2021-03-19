@@ -45,7 +45,8 @@ In his famous essay "The Work of Art in the Age of Mechanical Reproduction" Walt
 
 >Even the most perfect reproduction of a work of art is lacking in one element: its presence in time and space, its unique existence at the place where it happens to be. This unique existence of the work of art determined the history to which it was subject throughout the time of its existence. [...] One might subsume the eliminated element in the term “aura” and go on to say: that which withers in the age of mechanical reproduction is the aura of the work of art.
 
-- Walter Benjamin {: .caption}
+\- Walter Benjamin 
+{: .caption}
 
 But Benjamin is by no means mourning the loss of the aura. The aura is an expression of distance and authority of an artwork. In the age of manual reproduction, the reproduction is essentially a forgery and has no authenticity, because authenticity is outside of the sphere of manual or technical reproduction. Aura seems to be only possible through authenticity.
 
