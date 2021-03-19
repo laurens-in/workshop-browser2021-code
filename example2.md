@@ -4,11 +4,11 @@ title: Pattern Matching
 permalink: /example-2
 ---
 
-<script src="bundle-z-pattern.js"></script>
+<script src="bundle-z.js"></script>
 
 <script>
 const person = { name: 'Maria' }
-matches(person)(
+x.matches(person)(
   (x = { name: 'John' }) => console.log('John you are not welcome!'),
   (x)                    => console.log(`Hey ${x.name}, you are welcome!`)
 )
