@@ -31,11 +31,22 @@ If we strive to push art to its boundaries, the engagement with contemporary tec
 
 `Based on some other canadian dude that says basically that a society is defined by the way it communicates, this is in the podcast, listen to it again.`
 
+This is where media art comes into play. **write about media art here...**
+
+![Nam June Paik - Tape](images/nam-june-paik-tape.jpeg)
+
+
+
+--> how does code work, what are its possibilities?
+
+
 Media and message aren't exactly opposites or mutually exclusive: A medium can always become a message in another context. Think about this example: A score can be a medium in which music is the message. Music then again can be a medium through which we can express emotions or abstract ideas.
 
 In our current situation I'm interested in the following relationship between medium and message:
 
 ![medium-message](images/medium-message.svg)
+
+---> code offers generatability of music.
 
 Not because the browser is not interesting or important, but because code is the foundation through which we compose music in the browser. The browser has a great importance in our life. Its the portal through which we access the internet, so much so that for a lot of people its synonymous with the internet. But many of the layers that the browser adds to our composition process are of political or social nature, not so much compositional. Sure the browser allows us to make systems that are distributed over a network - and this is of course very interesting - but these connected nodes (or whatever you want to call them) are still defined through code. But in addition to that, the browser is also the reason why we have to use JavaScript, which again has huge implications on the way we write code and I will talk about that a bit later.
 
@@ -50,13 +61,30 @@ In his famous essay "The Work of Art in the Age of Mechanical Reproduction" Walt
 
 But Benjamin is by no means mourning the loss of the aura. The aura is an expression of distance and authority of an artwork. In the age of manual reproduction, the reproduction is essentially a forgery and has no authenticity, because authenticity is outside of the sphere of manual or technical reproduction. Aura seems to be only possible through authenticity.
 
-Distance, no matter how near the work of art is, is also an expression of aura. Since the traditional art work is a unique existence in time and space, this distance also exists in time and space. Think about standing in front of the Mona Lisa, no matter how close you can get, you can never touch it and even if you could, would you feel like touching its aura? Also the art is fixed in space, and you have to go there and "meet" it, this establishes also a form of hierarchy. The mechanically reproduced artwork however "meets the beholder half way". The traditional art work is also determined by the history to which it is a subject in the time of its existence. This can too create a distance in time between the art and its beholder.
+Distance, no matter how near the work of art is, is also an expression of aura. Since the traditional art work is a unique existence in time and space, this distance also exists in both dimensions. Think about standing in front of the Mona Lisa, no matter how close you can get, you can never touch it and even if you could, would you feel like touching its aura? Also the art is fixed in space, and you have to go there and "meet" it, this establishes also a form of hierarchy. The mechanically reproduced artwork however "meets the beholder half way". The traditional art work is also determined by the history to which it is a subject in the time of its existence. This can too create a distance in time between the art and its beholder.
 
 Through this capability of reproduction the art becomes available to the masses, which for Benjamin holds a lot of potential.
 
-If we look at where we are at now, I would argue that we have yet again entered a different age. 
+I would argue that we are now not only in the age of the digital reproduction of art, but go even further: the age of the digital **generation** of art. While of course the digital reproduction is significant, I would argue that the conceptual difference to the mechanical reproduction is far less then the difference between reproduction and generation in general.
 
-For Benjamin this ends
+The idea of an abstract piece of art which exists only through its specific instantiation, which again is unique in time and space every single time is found much earlier in history. Not in the dodecaphonic music of Schönberg and his followers, not in the serialism of Messiaen or the algorithmic composition of Hiller & Issacson. We find it first in early performance art, for example the soundwalks of Max Neuhaus: The composition exists in the form of a route which the composer knows and walks with his audience. Within that route the sounds are certainly predictable, but ultimately - from a compositional perspective - random. We can also see it in Alvin Luciers "I'm Sitting In A Room" - one of the only pre-generative pieces that uses recursion as a means of composition.
+
+I will make a distinction here between algorithmic composition and generative music. In the context of this text I will use the term algorithmic composition to describe music that is merely composed by a computer but does not express itself through a generative system (e.g. the Illiac Suite).
+
+I will use the term generative music to describe music that is not only generated and composed by a computer but also only exists within a generative system (e.g. Live Eternal).
+
+
+>For the first time ever, the devices people use to listen to music are also capable of executing Generative Music systems.
+
+\- Alex Bainter {: .caption}
+
+This quote by artist and developer behind [generative.fm](https://generative.fm) Alex Bainter makes that difference really clear.
+
+So why did we talk about aura? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art?
+
+
+
+Digital production essentially amplifies a lot of the effects that Benjamin was talking about.
 
 
 --> aura is lost
@@ -88,13 +116,6 @@ power structures
 
 
 
-## Media Art
-
-Media Art is a practice of art that takes these theoretical
-
-![Nam June Paik - Tape](images/nam-june-paik-tape.jpeg)
-
---> how does code work, what are its possibilities?
 
 
 
