@@ -1890,5 +1890,5 @@ var z = require('z');
 
 
 window.z = Object();
-window.z.matches = matches;
+window.z.matches = z.matches;
 },{"z":40}]},{},[41]);

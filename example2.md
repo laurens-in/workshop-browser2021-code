@@ -4,7 +4,7 @@ title: Pattern Matching
 permalink: /example-2
 ---
 
-<script src="bundle-z.js"></script>
+<script src="bundle.js"></script>
 
 <script>
 const person = { name: 'Maria' }
