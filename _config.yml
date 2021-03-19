@@ -3,6 +3,7 @@ title: "BROWSER2021 CODE"
 author: "Laurens Inauen"
 email: "laurens.hwm@gmail.com"
 description: Computational Thinking in Composition.
+markdown: kramdown
 theme: minima
 skin: dark
 header_pages:
