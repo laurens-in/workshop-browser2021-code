@@ -4,7 +4,7 @@ title: Pattern Matching
 permalink: /example-2
 ---
 
-<script src="https://unpkg.com/z" crossorigin="anonymous"></script>
+<script src="bundle-z-pattern.js"></script>
 
 <script>
 const person = { name: 'Maria' }
