@@ -13,7 +13,7 @@ const countOtherBack = x => {
 }
 
 countBack(10)
-countBackOther(12)
+countOtherBack(12)
 
 const synth = new Tone.Synth().toDestination();
 
