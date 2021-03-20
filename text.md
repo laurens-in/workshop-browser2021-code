@@ -31,7 +31,7 @@ If we strive to push art to its boundaries, the engagement with contemporary tec
 
 `Based on some other canadian dude that says basically that a society is defined by the way it communicates, this is in the podcast, listen to it again.`
 
-This is where media art comes into play. Media art - at least in my understanding of the term - is art that reflects its media. This reflection offers us insight about the specific medium that is used in some kind of way. If we look at Nam June Paiks **Random Access Music** we can see exactly that. The visitor can move the playback head across the tape in any way, which not only produces new kinds of sounds, but also breaks with the way we usually use tape.
+This is where media art comes into play. Media art - at least in my understanding of the term - is art that reflects its media. This reflection offers us insight about the specific medium that is used in some kind of way. If we look at Nam June Paiks **Random Access Music** we can see exactly that. The visitor can move the playback head across the tape in any way, which not only produces new kinds of sounds, but also breaks with the convention of how we use tape.
 
 ![Nam June Paik - Tape](images/nam-june-paik-tape.jpeg)
 
@@ -63,11 +63,12 @@ But Benjamin is by no means mourning the loss of the aura. The aura is an expres
 
 Distance, no matter how near the work of art is, is also an expression of aura. Since the traditional art work is a unique existence in time and space, this distance also exists in both dimensions. Think about standing in front of the Mona Lisa, no matter how close you can get, you can never touch it and even if you could, would you feel like touching its aura? Also the art is fixed in space, and you have to go there and "meet" it, this establishes also a form of hierarchy. The mechanically reproduced artwork however "meets the beholder half way". The traditional art work is also determined by the history to which it is a subject in the time of its existence. This can too create a distance in time between the art and its beholder.
 
-Through this capability of reproduction the art becomes available to the masses, which for Benjamin holds a lot of potential.
+Through this capability of reproduction the art becomes available to the masses, which for Benjamin holds a lot of potential. Think about the invention of printing and what it meant for people being able to read the bible. 
+https://medium.com/lessons-from-history/how-the-printing-press-and-the-papacys-corrupt-practices-accelerated-martin-luther-s-reformation-f50c9da3e675
 
 I would argue that we are now not only in the age of the digital reproduction of art, but go even further: the age of the digital **generation** of art. While of course the digital reproduction is significant, I would argue that the conceptual difference to the mechanical reproduction is far less then the difference between reproduction and generation in general.
 
-The idea of an abstract piece of art which exists only through its specific instantiation, which again is unique in time and space every single time is found much earlier in history. Not in the dodecaphonic music of Schönberg and his followers, not in the serialism of Messiaen or the algorithmic composition of Hiller & Issacson. We find it first in early performance art, for example the soundwalks of Max Neuhaus: The composition exists in the form of a route which the composer knows and walks with his audience. Within that route the sounds are certainly predictable, but ultimately - from a compositional perspective - random. We can also see it in Alvin Luciers "I'm Sitting In A Room" - one of the only pre-generative pieces that uses recursion as a means of composition.
+The idea of an abstract piece of art which exists only through its specific instantiation, which again is unique in time and space every single time is found much earlier in history. Not in the dodecaphonic music of Schönberg and his followers, not in the serialism of Messiaen or the algorithmic composition of Hiller & Issacson. We find it first in early performance art, for example the sound-walks of Max Neuhaus: The composition exists in the form of a route which the composer knows and walks with his audience. Within that route the sounds are certainly predictable, but ultimately - from a compositional perspective - random. We can also see it in Alvin Luciers "I'm Sitting In A Room" - one of the only pre-generative pieces - at least to my knowledge - that uses recursion as a means of composition.
 
 I will make a distinction here between algorithmic composition and generative music. In the context of this text I will use the term algorithmic composition to describe music that is merely composed by a computer but does not express itself through a generative system (e.g. the Illiac Suite).
 
@@ -78,10 +79,11 @@ I will use the term generative music to describe music that is not only generate
 
 \- Alex Bainter {: .caption}
 
-This quote by artist and developer behind [generative.fm](https://generative.fm) Alex Bainter makes that difference really clear.
+This quote by artist and developer behind [generative.fm](https://generative.fm) Alex Bainter explains what has changed: for the first time generative art has the possibility move into mass culture.
 
 So why did we talk about aura? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art?
 
+---> individualism through art, not through consumerism
 
 
 Digital production essentially amplifies a lot of the effects that Benjamin was talking about.
@@ -112,6 +114,9 @@ Laibach --> not interesting what they played but what they didn't play. there's 
 
 ---> Adorno is a strong critic of mass culture, Benjamin thinks it has potential to destroy itself in the same way that within capitalism there is the potential to destroy captialism (Engels).
 
+---> Pierre Schaeffer : Nothing possible outside doremi
+
+---> if nothing is possible outside, and its wrong to be inside ---> generative music
 power structures
 
 
