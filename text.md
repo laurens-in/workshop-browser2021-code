@@ -19,7 +19,9 @@ To find a question to this answer we can look one of the most important quotes o
 
 This quote is the essence of what media theory is about. While McLuhan certainly doesn't think the medium is the **whole** message, he states that the effect of the medium is by far greater than that of its content, which is merely incidental. As he says: The fact that we have the technology of TV has a tremendous effect on the world, how we communicate and how we ultimately develop as a society and individuals. What we print doesn't as matter as much as the printed word. The existence of the telephone affects everyone, what you say on the telephone affects very few people.
 
-While this is certainly true to some extent, I do not think that we can dismiss the content of media as simply incidental. McLuhan says that he doesn't want to make value judgments about media, but if you listen to him talk you will notice that his tone suggests something different. When asked about public television, he replies that it is boring and eventually unsustainable because it doesn't care about the people who watch it. If a private company finances a TV program, they have an interest in the program reaching a lot of people, so they have an interest in making media "for the people", which is absurd and completely dismisses the systemic issues in how media us used by companies to manipulate everything consumption behavior to political views to serve their interests. He does address it a little bit though.[^mcluhan] [^mcluhan-podcast]
+While this is certainly true to some extent, I do not think that we can dismiss the content of media as simply incidental. McLuhan says that he doesn't want to make value judgments about media, but if you listen to him talk you will notice that his tone suggests something different. When asked about public television, he replies that it is boring and eventually unsustainable because it doesn't care about the people who watch it. If a private company finances a TV program, they have an interest in the program reaching a lot of people, so they have an interest in making media "for the people", which is absurd and completely dismisses the systemic issues in how media us used by companies/elites to manipulate everything from consumption behavior to political views to serve their interests. He at one point says that media is mass manipulation, but It doesn't seem to me that he acknowledges the severity nor the root of the problem, outside of his own media theoretical world.[^mcluhan] [^mcluhan-podcast]
+
+In general when reading McLuhan I have the feeling we can find a lot of rather conservative ideas which always have the tone of the judging priest, but are then rendered objective by saying McLuhan doesn't make "value judgments".
 
 Still, from this realization that the medium at least shapes the message, we can draw two conclusions for us as artists. 
 
@@ -37,7 +39,7 @@ This is where media art comes into play. Media art - at least in my understandin
 
 
 
---> how does code work, what are its possibilities?
+Now lets think about the browser. The browser is an environment which executes code, namely HTML, CSS and JavaScript. In the end this is what we will use to generate music.
 
 
 Media and message aren't exactly opposites or mutually exclusive: A medium can always become a message in another context. Think about this example: A score can be a medium in which music is the message. Music then again can be a medium through which we can express emotions or abstract ideas.
@@ -63,6 +65,15 @@ But Benjamin is by no means mourning the loss of the aura. The aura is an expres
 
 Distance, no matter how near the work of art is, is also an expression of aura. Since the traditional art work is a unique existence in time and space, this distance also exists in both dimensions. Think about standing in front of the Mona Lisa, no matter how close you can get, you can never touch it and even if you could, would you feel like touching its aura? Also the art is fixed in space, and you have to go there and "meet" it, this establishes also a form of hierarchy. The mechanically reproduced artwork however "meets the beholder half way". The traditional art work is also determined by the history to which it is a subject in the time of its existence. This can too create a distance in time between the art and its beholder.
 
+I certainly experienced this a with generative music, because generative music up until now exists almost exclusively in an exhibition space. This means I have the go to the museum, sit on a shitty chair or bench and listen to the generative piece for about 10 minutes with people walking in and out and then going home, mostly disappointed.
+
+Its even the same with any concert: I have to travel to the venue. The artist is up on stage, separated from the audience which is behind a fence. The artist has absolute authority. The audience demands absolute authenticity, as shown every time an artist loses their career for using playback.
+
+So in a sense these 
+
+---> black metal, how to translate authenticity to the mechanically reproducible art
+---> its important because black metal (in a very dumb way) is about individualism above all else, because they have bought the lie
+
 Through this capability of reproduction the art becomes available to the masses, which for Benjamin holds a lot of potential. Think about the invention of printing and what it meant for people being able to read the bible. 
 https://medium.com/lessons-from-history/how-the-printing-press-and-the-papacys-corrupt-practices-accelerated-martin-luther-s-reformation-f50c9da3e675
 
@@ -81,7 +92,7 @@ I will use the term generative music to describe music that is not only generate
 
 This quote by artist and developer behind [generative.fm](https://generative.fm) Alex Bainter explains what has changed: for the first time generative art has the possibility move into mass culture.
 
-So why did we talk about aura? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art?
+So why did we talk about aura? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art? Is authenticity outside of the sphere of digital generation?
 
 ---> individualism through art, not through consumerism
 
