@@ -11,7 +11,7 @@ countBack(10)
 
 const makeRhythm = x => {
     console.log("pew", x);
-    audioContextTimers.setTimeout(makeRhythm(x), x)
+    setTimeout(makeRhythm, x, Math.ceil(Math.random() * x + 200))
 }
 
 makeRhythm(1000)
