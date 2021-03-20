@@ -65,13 +65,17 @@ But Benjamin is by no means mourning the loss of the aura. The aura is an expres
 
 Distance, no matter how near the work of art is, is also an expression of aura. Since the traditional art work is a unique existence in time and space, this distance also exists in both dimensions. Think about standing in front of the Mona Lisa, no matter how close you can get, you can never touch it and even if you could, would you feel like touching its aura? Also the art is fixed in space, and you have to go there and "meet" it, this establishes also a form of hierarchy. The mechanically reproduced artwork however "meets the beholder half way". The traditional art work is also determined by the history to which it is a subject in the time of its existence. This can too create a distance in time between the art and its beholder.
 
-I certainly experienced this a with generative music, because generative music up until now exists almost exclusively in an exhibition space. This means I have the go to the museum, sit on a shitty chair or bench and listen to the generative piece for about 10 minutes with people walking in and out and then going home, mostly disappointed.
+Its funny that the way Benjamin describes art before its mechanical reproduction is actually quite similar to the way I perceive most generative music: Generative music up until now exists almost exclusively in an exhibition space. This means I have the go to the museum, sit on a shitty chair or bench and listen to the generative piece for about 10 minutes with people walking in and out only conceptually being able to grasp the extent of the composition, then going home, mostly disappointed. 
 
-Its even the same with any concert: I have to travel to the venue. The artist is up on stage, separated from the audience which is behind a fence. The artist has absolute authority. The audience demands absolute authenticity, as shown every time an artist loses their career for using playback.
+Its even the same with any concert: I have to travel to the venue. The artist is up on stage, separated from the audience which is behind a fence. The artist has absolute authority. The audience demands absolute authenticity, as shown every time an artist loses their career for using playback. There are of course artists who challenge that, like for example Hatsune Miko, but its still the predominant concert experience.
 
-So in a sense these 
+**anecdote about studying and people not going to concerts**
 
+
+---> black metal is special because it also borrows from performance art but is essentially not live music
+---> black metal deals a lot with anger, hate, very physical emotions, but how can you be physical without being social. because we know how media works we can understand the physical intensity behind early records.
 ---> black metal, how to translate authenticity to the mechanically reproducible art
+---> black metal makes a physical experience reproducible, striving for authenticity, which is something that is not possible with generative black metal, but which makes it ultimately authentic again.
 ---> its important because black metal (in a very dumb way) is about individualism above all else, because they have bought the lie
 
 Through this capability of reproduction the art becomes available to the masses, which for Benjamin holds a lot of potential. Think about the invention of printing and what it meant for people being able to read the bible. 
@@ -79,7 +83,7 @@ https://medium.com/lessons-from-history/how-the-printing-press-and-the-papacys-c
 
 I would argue that we are now not only in the age of the digital reproduction of art, but go even further: the age of the digital **generation** of art. While of course the digital reproduction is significant, I would argue that the conceptual difference to the mechanical reproduction is far less then the difference between reproduction and generation in general.
 
-The idea of an abstract piece of art which exists only through its specific instantiation, which again is unique in time and space every single time is found much earlier in history. Not in the dodecaphonic music of Schönberg and his followers, not in the serialism of Messiaen or the algorithmic composition of Hiller & Issacson. We find it first in early performance art, for example the sound-walks of Max Neuhaus: The composition exists in the form of a route which the composer knows and walks with his audience. Within that route the sounds are certainly predictable, but ultimately - from a compositional perspective - random. We can also see it in Alvin Luciers "I'm Sitting In A Room" - one of the only pre-generative pieces - at least to my knowledge - that uses recursion as a means of composition.
+The idea of an abstract piece of art which exists only through its specific instantiation, which again is unique in time and space every single time is found much earlier in history. Not in the dodecaphonic music of Schönberg and his followers, not in the serialism of Messiaen or the algorithmic composition of Hiller & Issacson. We find it first in early performance art, for example the sound-walks of Max Neuhaus: The composition exists in the form of a route which the composer knows and walks with his audience. Within that route the sounds are certainly predictable, but ultimately - from a compositional perspective - random. In addition to that the performance could only be "reproduced" (in a way that it loses its uniqueness) by means of preservation - a recording, a film - or by means of reenactment - essentially theater - by both of which it is no longer performance art as a result.
 
 I will make a distinction here between algorithmic composition and generative music. In the context of this text I will use the term algorithmic composition to describe music that is merely composed by a computer but does not express itself through a generative system (e.g. the Illiac Suite).
 
@@ -88,7 +92,8 @@ I will use the term generative music to describe music that is not only generate
 
 >For the first time ever, the devices people use to listen to music are also capable of executing Generative Music systems.
 
-\- Alex Bainter {: .caption}
+\- Alex Bainter
+{: .caption}
 
 This quote by artist and developer behind [generative.fm](https://generative.fm) Alex Bainter explains what has changed: for the first time generative art has the possibility move into mass culture.
 
@@ -97,24 +102,9 @@ So why did we talk about aura? How does the aura change in the age of digital ge
 ---> individualism through art, not through consumerism
 
 
-Digital production essentially amplifies a lot of the effects that Benjamin was talking about.
-
-
---> aura is lost
---> aura is a thing of distance and authority
---> art becomes accessible to the masses
-
---> whether or not we perceive the loss of the aura as something good or bad, we can not deny it is a fundamental, conceptual difference in the way we perceive art.
-
 --> now we live in the age of not only the digital reproduction of art, but the digital generation of art.
---> this shift is much more significant than the shift from mechanical to digital.
---> generative music is not new though, its a tradition from cage, to serialism to algorithmic composition
-    ---> conceptually closest is probably the principle of a sound-walk. the randomness in a sound-walk is not really different from the one in a computer if we subscribe to a deterministic universe.
-    more performance art in general than sound walks, has an abstract idea, an unique execution and can't be preserved.
 
---> I make a distinction between algorithmic composition and generative music
-    ---> algorithmic composition is music composed by a computer, but does not express itself as a generative system
-    ---> generative music is music generated by a computer and only exists in a generative context. there is an interesting thing here: what benjamin describes about traditional art is exactly true about early generative pieces, being played in a museum setting.
+
 
 --> alex bainter quote masterarbeit, what seperates the browser is that it is the environment that makes it possible
 
