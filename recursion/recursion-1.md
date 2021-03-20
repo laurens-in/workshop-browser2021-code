@@ -8,7 +8,7 @@ permalink: /recursion-1
 
 Recursion is the simple principle of a process calling itself until a stop condition is met. If the condition is met, all calls will be evaluated recursively
 
-<script src="https://cdn.jsdelivr.net/npm/audio-context-timers@5.0.48/build/es5/bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/audio-context-timers@5.0.47/build/es5/bundle.min.js"></script>
 <script src="recursion/recursion.js"></script>
 
 ```js
