@@ -8,9 +8,15 @@ permalink: /why-the-browser
 
 I will look at this question from three different angles, through three different quotes of three different theorists.
 
+**Disclaimer**
+
+I will make a distinction here between algorithmic composition and generative music. In the context of this text I will use the term algorithmic composition to describe music that is merely composed by a computer but does not express itself through a generative system (e.g. the Illiac Suite).
+
+I will use the term generative music to describe music that is not only generated and composed by a computer but also only exists within a generative system (e.g. Live Eternal).
+
 ## Part 1 - McLuhan
 
-To find a question to this answer we can look one of the most important quotes of modern media theory.
+To find a question to this answer we can look one of the most infamous quotes of modern media theory:
 
 > The medium is the message.
 
@@ -37,9 +43,7 @@ This is where media art comes into play. Media art - at least in my understandin
 
 ![Nam June Paik - Tape](images/nam-june-paik-tape.jpeg)
 
-
-
-Now lets think about the browser. The browser is an environment which executes code, namely HTML, CSS and JavaScript. In the end this is what we will use to generate music, so lets look at the medium - message relationships.
+So what is the Browser? The browser is an environment which executes code, namely HTML, CSS and JavaScript. In the end this is what we will use to generate music, so lets look at the medium - message relationships.
 
 ![medium-message](images/medium-message.svg)
 
@@ -58,7 +62,7 @@ In his famous essay "The Work of Art in the Age of Mechanical Reproduction" Walt
 \- Walter Benjamin 
 {: .caption}
 
-But Benjamin is by no means mourning the loss of the aura. The aura is an expression of distance and authority of an artwork. In the age of manual reproduction, the reproduction is essentially a forgery and has no authenticity, because authenticity is outside of the sphere of manual or technical reproduction. Aura seems to be only possible through authenticity.
+But Benjamin is by no means mourning the loss of the aura. The aura is an expression of distance, authority and authenticity of an artwork. In the age of manual reproduction, the reproduction is essentially a forgery and has no authenticity, because authenticity is outside of the sphere of manual or technical reproduction. Aura seems to be only possible through authenticity.
 
 Distance, no matter how near the work of art is, is also an expression of aura. Since the traditional art work is a unique existence in time and space, this distance also exists in both dimensions. Think about standing in front of the Mona Lisa, no matter how close you can get, you can never touch it and even if you could, would you feel like touching its aura? Also the art is fixed in space, and you have to go there and "meet" it, this establishes also a form of hierarchy. The mechanically reproduced artwork however "meets the beholder half way". The traditional art work is also determined by the history to which it is a subject in the time of its existence. This can too create a distance in time between the art and its beholder.
 
@@ -66,24 +70,27 @@ Its funny that the way Benjamin describes art before its mechanical reproduction
 
 Its even the same with any concert: I have to travel to the venue. The artist is up on stage, separated from the audience which is behind a fence. The artist has absolute authority. The audience demands absolute authenticity, as shown every time an artist loses their career for using playback. There are of course artists who challenge that, like for example Hatsune Miko, but its still the predominant concert experience.
 
+But through the capability of reproduction art becomes available to the masses, which is important for Benjamin. Think about the invention of printing and what it meant for people being able to read the bible.[^printing-bible] Benjamin gives us a hint at what he's going at:
 
----> black metal is special because it also borrows from performance art but is essentially not live music
----> black metal deals a lot with anger, hate, very physical emotions, but how can you be physical without being social. because we know how media works we can understand the physical intensity behind early records.
----> black metal, how to translate authenticity to the mechanically reproducible art
----> black metal makes a physical experience reproducible, striving for authenticity, which is something that is not possible with generative black metal, but which makes it ultimately authentic again.
----> its important because black metal (in a very dumb way) is about individualism above all else, because they have bought the lie
+>When Marx undertook his critique of the capitalistic
+mode of production, this mode was in its infancy. Marx
+directed his efforts in such a way as to give them
+prognostic value. He went back to the basic conditions
+underlying capitalistic production and through his
+presentation showed what could be expected of
+capitalism in the future. The result was that one could
+expect it not only to exploit the proletariat with
+increasing intensity, but ultimately to create conditions
+which would make it possible to abolish capitalism itself.[^benjamin-preface]
 
-Through this capability of reproduction the art becomes available to the masses, which for Benjamin holds a lot of potential. Think about the invention of printing and what it meant for people being able to read the bible. 
-https://medium.com/lessons-from-history/how-the-printing-press-and-the-papacys-corrupt-practices-accelerated-martin-luther-s-reformation-f50c9da3e675
+From my point of view, Benjamin being - contrary to other thinkers of his time - so positive about mass culture, has to do with him seeing it as part of this bigger structure of capitalism defeating itself.
+(To explore this further read the Epilogue of his text)
 
-I would argue that we are now not only in the age of the digital reproduction of art, but go even further: the age of the digital **generation** of art. While of course the digital reproduction is significant, I would argue that the conceptual difference to the mechanical reproduction is far less then the difference between reproduction and generation in general.
+I would argue that we are now not only in the age of the digital reproduction of art[^digital-art], but go even further: the age of the digital **generation** of art. While of course the digital reproduction is significant, I would argue that the conceptual difference to the mechanical reproduction is far less then the difference between reproduction and generation in general.
 
 The idea of an abstract piece of art which exists only through its specific instantiation, which again is unique in time and space every single time is found much earlier in history. Not in the dodecaphonic music of Schönberg and his followers, not in the serialism of Messiaen or the algorithmic composition of Hiller & Issacson. We find it first in early performance art, for example the sound-walks of Max Neuhaus: The composition exists in the form of a route which the composer knows and walks with his audience. Within that route the sounds are certainly predictable, but ultimately - from a compositional perspective - random. In addition to that the performance could only be "reproduced" (in a way that it loses its uniqueness) by means of preservation - a recording, a film - or by means of reenactment - essentially theater - by both of which it is no longer performance art as a result.
 
-I will make a distinction here between algorithmic composition and generative music. In the context of this text I will use the term algorithmic composition to describe music that is merely composed by a computer but does not express itself through a generative system (e.g. the Illiac Suite).
-
-I will use the term generative music to describe music that is not only generated and composed by a computer but also only exists within a generative system (e.g. Live Eternal).
-
+But why are we just now in that age? Why draw the line here?
 
 >For the first time ever, the devices people use to listen to music are also capable of executing Generative Music systems.
 
@@ -92,18 +99,17 @@ I will use the term generative music to describe music that is not only generate
 
 This quote by artist and developer behind [generative.fm](https://generative.fm) Alex Bainter explains what has changed: for the first time generative art has the possibility move into mass culture.
 
-So why did we talk about aura? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art? Is authenticity outside of the sphere of digital generation?
+What does this mean for art? How does it affect the aura, authority and authenticity of the work of art?
+
+I can not answer these questions for you, but I can give some insight on what it means in my own work.
+
+Black Metal is essentially a quest to bring authenticity to the reproducible medium. It does so by means of production: Because of our common understanding of the medium they use (e.g. tape, in the early days) we intuitively know that the recording "has not been tampered with" - meaning what we hear is in fact a physical effort and not some kind of technological trickery. Why is this necessary though? Performance art faces similar issues but often just refrains from reproduction? The answer is twofold. First, from a pragmatic point of view, musicians expressed themselves through the only medium they thought was available to them. Second, black metal is characterized by a misanthropic worldview, an antisocial attitude and individualism above all else (although rather superficial), which does not work well with concerts. Given the fact that many bands refrain from playing live shows, the authenticity which they can achieve within reproducible media seems - at least to their perception - to be a meaningful one.
+
+Black metal is also very anti-technological because from their perspective modern technology is what diminishes authenticity (sounds familiar?). Within the framework of black metal this is certainly true to some extent: By using triggered drum sets and modern production or editing technology the physical effort is no longer present as part of our shared understanding of the medium, but vanishes because of exactly that. This is where generative music comes into play, because our shared understanding of (digital) generative music is not one that is concerned with technological trickery as a substitute for physical effort. There is no physical effort through which could be harmed in its authenticity by technological forces, which is why - at least in my opinion - remains authentic - in a black metal sense. In a sense black metal is often just a reproducible documentation of a performance, but in contrast to performance art, the artwork only exists within this reproduction.
+
+So why did we talk about ? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art? Is authenticity outside of the sphere of digital generation?
 
 ---> individualism through art, not through consumerism
-
-
---> now we live in the age of not only the digital reproduction of art, but the digital generation of art.
-
-
-
---> alex bainter quote masterarbeit, what seperates the browser is that it is the environment that makes it possible
-
-Laibach --> not interesting what they played but what they didn't play. there's a crack in every wall --> has art failed us?
 
 
 ## Part 3 - Adorno
@@ -132,3 +138,8 @@ power structures
 [^mcluhan]: Marshall McLuhan, The medium is the message, Monday Conference on ABC TV, https://www.youtube.com/watch?v=UoCrx0scCkM
 
 [^mcluhan-podcast]: https://theoretician.podbean.com/e/the-medium-is-the-message-marshall-mcluhan-keyword/
+
+
+[^printing-bible]: https://medium.com/lessons-from-history/how-the-printing-press-and-the-papacys-corrupt-practices-accelerated-martin-luther-s-reformation-f50c9da3e675
+
+[^digital-art]: If you want to read more about this then please read the work of art in the age of its digital reproduction
