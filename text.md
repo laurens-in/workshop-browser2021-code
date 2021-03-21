@@ -59,7 +59,7 @@ In his famous essay "The Work of Art in the Age of Mechanical Reproduction" Walt
 
 >Even the most perfect reproduction of a work of art is lacking in one element: its presence in time and space, its unique existence at the place where it happens to be. This unique existence of the work of art determined the history to which it was subject throughout the time of its existence. [...] One might subsume the eliminated element in the term “aura” and go on to say: that which withers in the age of mechanical reproduction is the aura of the work of art.
 
-\- Walter Benjamin 
+\- Walter Benjamin, The Work of Art in the Age of Mechanical Reproduction, Chapter II
 {: .caption}
 
 But Benjamin is by no means mourning the loss of the aura. The aura is an expression of distance, authority and authenticity of an artwork. In the age of manual reproduction, the reproduction is essentially a forgery and has no authenticity, because authenticity is outside of the sphere of manual or technical reproduction. Aura seems to be only possible through authenticity.
@@ -81,7 +81,9 @@ presentation showed what could be expected of
 capitalism in the future. The result was that one could
 expect it not only to exploit the proletariat with
 increasing intensity, but ultimately to create conditions
-which would make it possible to abolish capitalism itself.[^benjamin-preface]
+which would make it possible to abolish capitalism itself.
+
+\- Walter Benjamin, The Work of Art in the Age of Mechanical Reproduction, Preface
 
 From my point of view, Benjamin being - contrary to other thinkers of his time - so positive about mass culture, has to do with him seeing it as part of this bigger structure of capitalism defeating itself.
 (To explore this further read the Epilogue of his text)
