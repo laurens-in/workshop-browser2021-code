@@ -6,7 +6,7 @@ permalink: /why-the-browser
 
 # Why should we make music in the browser?
 
-I will look at this question from three different angles, through three different quotes of three different theorists.
+I will talk about three different perspectives which are important to me as an artist and which were important for my work in the browser and generative music in general.
 
 **Disclaimer**
 
@@ -106,23 +106,34 @@ What does this mean for art? How does it affect the aura, authority and authenti
 
 I can not answer these questions for you, but I can give some insight on what it means in my own work.
 
-Black Metal is essentially a quest to bring authenticity to the reproducible medium. It does so by means of production: Because of our common understanding of the medium they use (e.g. tape, in the early days) we intuitively know that the recording "has not been tampered with" - meaning what we hear is in fact a physical effort and not some kind of technological trickery. Why is this necessary though? Performance art faces similar issues but often just refrains from reproduction? The answer is twofold. First, from a pragmatic point of view, musicians expressed themselves through the only medium they thought was available to them. Second, black metal is characterized by a misanthropic worldview, an antisocial attitude and individualism above all else (although rather superficial), which does not work well with concerts. Given the fact that many bands refrain from playing live shows, the authenticity which they can achieve within reproducible media seems - at least to their perception - to be a meaningful one.
+Black metal is essentially a quest to bring authenticity to the reproducible medium. It does so by means of production: Because of our common understanding of the medium they use (e.g. tape, in the early days) we intuitively know that the recording "has not been tampered with" - meaning what we hear is in fact a physical effort and not some kind of technological trickery. Why is this necessary though? Performance art faces similar issues but often just refrains from reproduction? The answer is twofold. First, from a pragmatic point of view, musicians expressed themselves through the only medium they thought was available to them. Second, black metal is characterized by a misanthropic worldview, an antisocial attitude and individualism above all else (although rather superficial), ideas which do not fit well into the - by nature - social context of a concert/performance. Given the fact that many bands refrain from playing live shows, the authenticity which they can achieve within reproducible media seems - at least to their perception - to be a meaningful one.
 
-Black metal is also very anti-technological because from their perspective modern technology is what diminishes authenticity (sounds familiar?). Within the framework of black metal this is certainly true to some extent: By using triggered drum sets and modern production or editing technology the physical effort is no longer present as part of our shared understanding of the medium, but vanishes because of exactly that. This is where generative music comes into play, because our shared understanding of (digital) generative music is not one that is concerned with technological trickery as a substitute for physical effort. There is no physical effort through which could be harmed in its authenticity by technological forces, which is why - at least in my opinion - remains authentic - in a black metal sense. In a sense black metal is often just a reproducible documentation of a performance, but in contrast to performance art, the artwork only exists within this reproduction.
+Black metal is also very anti-technological because from their perspective modern technology is what diminishes authenticity (sounds familiar?). Within the framework of black metal this is certainly true to some extent: By using triggered drum sets and modern production or editing technology the physical effort is no longer present as part of our shared understanding of the medium, but vanishes because of exactly that. This is where generative music comes into play, because our shared understanding of (digital) generative music is not one that is concerned with technological trickery as a substitute for physical effort. There is no physical effort involved which could be harmed in its authenticity by technological forces, which is why - at least in my opinion - the artwork remains authentic. The question remains whether this authenticity is the same kind of authenticity Benjamin is talking about, or if this perception of authenticity has shifted in a way that we can no longer compare the two sentiments.
 
-So why did we talk about ? How does the aura change in the age of digital generation - where the original exists as an abstract idea that exists in code - that is not the artwork itself - and every generation or iteration of the artwork is unique in time and space? How does that change affect the way we think about and create art? Is authenticity outside of the sphere of digital generation?
+The last thing I want to talk about concerning this subject is authority, and for this we need on more perspective.
 
----> individualism through art, not through consumerism
+- individualism through art, not through consumerism --> laibach --> maybe? lets see -
 
 
-## Part 3 - Adorno
+## Part 3 - Adorno & Schaeffer
 
----> Adorno is a strong critic of mass culture, Benjamin thinks it has potential to destroy itself in the same way that within capitalism there is the potential to destroy captialism (Engels).
+While Benjamin saw potential in mass culture, after the war there were some theorists with different perspectives. One of them is Theoder W. Adorno, who is the author of this famous quote:
 
----> Pierre Schaeffer : Nothing possible outside doremi
+>To write a poem after Ausschwitz is barbaric.
 
----> if nothing is possible outside, and its wrong to be inside ---> generative music
-power structures
+\- Theodor W. Adorno, Culture Critique and Society
+
+This quote is very controversial and has been discussed at length by numerous people, which is not what I am going to do here. I want to talk about the reason why Adorno had to say it in the first place. While it is often wrongly interpreted as verdict, this is not actually what it says. It captures the feeling which lots of artists and critics had after the second world war: art has failed us. Art in the sense of the romantic artwork, with all its overwhelmingness and pathos. Art that was abused by the nazis to spread their ideology through manipulation of the recipients emotions. If art has the power to manipulate emotions - which I do believe - then this means that the artist has power over the listener. This power can be abused, which is bad. To counter this many composers delved deeper and deeper into abstract music. This seemed fine to me at first, but then I read an interview with Pierre Schaeffer in which he said this:
+
+>"You have to remind musicians of what Dante wrote over the Gates of Hell: Abandon hope all ye who enter here. If you enter, if you want to make music, you must abandon hope," Schaeffer warned. In the interview, Schaeffer also used the term ‘DoReMi' to mean traditional musical tuning, instrumentation, and arrangement. "There's no way out of traditional music," he opined. And, most darkly, Schaeffer told Hodgkinson: "Seeing that no one knew what to do anymore with DoReMi, maybe we had to look outside that. Unfortunately it took me forty years to conclude that nothing is possible outside DoReMi. In other words, I wasted my life."
+
+\- Pierre Schaeffer, Interview with Tim Hodgkinson for ReR[^pierre]
+{: .quote}
+
+If we do trust Pierre Schaeffer this paints a rather bleak image. At least it did for me, because I do empathize with his statements. Because if we can't continue with *DoReMi* as Adorno suggests and we can't make anything outside of *DoReMi*, what is there left to do?
+
+The answer for me at least was generative music. With generative music I can move in and out of *DoReMi* as a merely incidental side effect (Pieces For Paul Proteus), I can abstract the patterns behind manipulative music and reveal them as the result of a simple set of rules and not profound, authentic, human emotion. To come back to Benjamin, I can keep my authenticity and get rid of the authority.
+
 
 
 
@@ -146,3 +157,5 @@ power structures
 [^printing-bible]: https://medium.com/lessons-from-history/how-the-printing-press-and-the-papacys-corrupt-practices-accelerated-martin-luther-s-reformation-f50c9da3e675
 
 [^digital-art]: If you want to read more about this then please read the work of art in the age of its digital reproduction
+
+[^pierre]: https://www.furious.com/perfect/pierreschaeffer.html
