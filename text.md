@@ -84,6 +84,7 @@ increasing intensity, but ultimately to create conditions
 which would make it possible to abolish capitalism itself.
 
 \- Walter Benjamin, The Work of Art in the Age of Mechanical Reproduction, Preface
+{: .caption}
 
 From my point of view, Benjamin being - contrary to other thinkers of his time - so positive about mass culture, has to do with him seeing it as part of this bigger structure of capitalism defeating itself.
 (To explore this further read the Epilogue of his text)

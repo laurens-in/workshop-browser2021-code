@@ -6,8 +6,7 @@ const countBack = x => {
 
 const countOtherBack = x => {
     if (x !== 0) {
-        console.log(x)
-        countBack(x - 1);
+        return countBack(x - 1);
     }; // simple stop condition
     console.log(x)                      // log x to console                        // call the function recursively
 }
@@ -28,3 +27,9 @@ const makeRhythm = x => {
 }
 
 makeRhythm(1000)
+
+
+const makeSecondRhythm = x => {
+    play();
+    setTimeout()
+}
