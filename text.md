@@ -39,18 +39,15 @@ This is where media art comes into play. Media art - at least in my understandin
 
 
 
-Now lets think about the browser. The browser is an environment which executes code, namely HTML, CSS and JavaScript. In the end this is what we will use to generate music.
-
-
-Media and message aren't exactly opposites or mutually exclusive: A medium can always become a message in another context. Think about this example: A score can be a medium in which music is the message. Music then again can be a medium through which we can express emotions or abstract ideas.
-
-In our current situation I'm interested in the following relationship between medium and message:
+Now lets think about the browser. The browser is an environment which executes code, namely HTML, CSS and JavaScript. In the end this is what we will use to generate music, so lets look at the medium - message relationships.
 
 ![medium-message](images/medium-message.svg)
 
----> code offers generatability of music.
+Media and message aren't exactly opposites or mutually exclusive: A medium can always become a message in another context. Think about this example: A score can be a medium in which music is the message. Music then again can be a medium through which we can express emotions or abstract ideas.
+{: .caption}
 
-Not because the browser is not interesting or important, but because code is the foundation through which we compose music in the browser. The browser has a great importance in our life. Its the portal through which we access the internet, so much so that for a lot of people its synonymous with the internet. But many of the layers that the browser adds to our composition process are of political or social nature, not so much compositional. Sure the browser allows us to make systems that are distributed over a network - and this is of course very interesting - but these connected nodes (or whatever you want to call them) are still defined through code. But in addition to that, the browser is also the reason why we have to use JavaScript, which again has huge implications on the way we write code and I will talk about that a bit later.
+
+Important to me is especially the relationship between code and music. Not because the browser isn't an interesting environment, but because code is the foundation through which we compose music within that environment. The browser has a great importance in our life. Its the portal through which we access the internet, so much so that for a lot of people its synonymous with the internet. But many of the layers that the browser adds to our composition process are of political or social nature, not so much compositional. Sure the browser allows us to make systems that are distributed over a network - and this is of course very interesting - but these connected nodes (or whatever you want to call them) are still defined through code. But in addition to that, the browser is also the reason why we have to use JavaScript, which again has huge implications on the way we write code and I will talk about that a bit later.
 
 ## Part 2 - Benjamin
 
@@ -68,8 +65,6 @@ Distance, no matter how near the work of art is, is also an expression of aura. 
 Its funny that the way Benjamin describes art before its mechanical reproduction is actually quite similar to the way I perceive most generative music: Generative music up until now exists almost exclusively in an exhibition space. This means I have the go to the museum, sit on a shitty chair or bench and listen to the generative piece for about 10 minutes with people walking in and out only conceptually being able to grasp the extent of the composition, then going home, mostly disappointed. 
 
 Its even the same with any concert: I have to travel to the venue. The artist is up on stage, separated from the audience which is behind a fence. The artist has absolute authority. The audience demands absolute authenticity, as shown every time an artist loses their career for using playback. There are of course artists who challenge that, like for example Hatsune Miko, but its still the predominant concert experience.
-
-**anecdote about studying and people not going to concerts**
 
 
 ---> black metal is special because it also borrows from performance art but is essentially not live music
