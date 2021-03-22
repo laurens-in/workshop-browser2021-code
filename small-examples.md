@@ -24,6 +24,7 @@ const countBack = (x) => {
 countBack(10)
 ```
 <button id="play-example1">Run</button>
+
 <script>
 document.getElementById("play-example1").addEventListener("click", () => countBack(10));
 </script>
@@ -40,6 +41,7 @@ const playRecursive = (note, length) => {
 playRecursive('C4', 20)
 ```
 <button id="play-example2">Run</button>
+
 <script>
 document.getElementById("play-example2").addEventListener("click", () => playRecursive('C4', 20));
 </script>
