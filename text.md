@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Why The Browser
+title: Context
 permalink: /why-the-browser
 ---
 
