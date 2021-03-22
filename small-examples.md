@@ -23,9 +23,9 @@ const countBack = (x) => {
 
 countBack(10)
 ```
-<button id="play">Run</button>
+<button id="play-example1">Run</button>
 <script>
-document.getElementById("play").addEventListener("click", () => countBack(10));
+document.getElementById("play-example1").addEventListener("click", () => countBack(10));
 </script>
 
 We can use recursion is essentially a means to structure our code and hence our composition. We can think about structuring time recursively:
@@ -39,7 +39,7 @@ const playRecursive = (note, length) => {
 
 playRecursive('C4', 20)
 ```
-<button id="play">Run</button>
+<button id="play-example2">Run</button>
 <script>
-document.getElementById("play").addEventListener("click", () => playRecursive('C4', 20));
+document.getElementById("play-example2").addEventListener("click", () => playRecursive('C4', 20));
 </script>
