@@ -45,3 +45,41 @@ playRecursive('C4', 20)
 <script>
 document.getElementById("play-example2").addEventListener("click", () => playRecursive('C4', 20));
 </script>
+
+
+
+## Something Data
+
+
+```js
+const someMusicalData = [66, 23, 76, 89]
+
+const someOtherData = [[120, 500], [330, 800]]
+
+
+const pitches = [100, 200]
+const lengths = [5, 7, 8]
+
+cartesian(notes, pitches)
+
+[
+    [100, 5],
+    [100, 7],
+    [100, 8],
+    [200, 5],
+    [200, 7],
+    [200, 8]
+]
+
+
+class someStructure {
+    pitches
+    nextSequence;
+
+    constructor(pitches, sequence) {
+        this.pitches = pitches
+        this.nextSequence = sequence
+
+    }
+}
+```
