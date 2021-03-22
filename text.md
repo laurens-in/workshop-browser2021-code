@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Context
-permalink: /why-the-browser
+title: Background
+permalink: /background
 ---
 
 # The Browser, Genrative Music & A Bit Of Perspective
@@ -10,10 +10,13 @@ In this workshop I will try to give a few reasons why we might want to consider 
 
 
 **Disclaimer**
+{: .caption}
 
 I will make a distinction here between algorithmic composition and generative music. In the context of this text I will use the term algorithmic composition to describe music that is merely composed by a computer but does not express itself through a generative system (e.g. the Illiac Suite).
+{:. caption}
 
 I will use the term generative music to describe music that is not only generated and composed by a computer but also only exists within a generative system (e.g. Live Eternal).
+{: .caption}
 
 ## Part 1 - McLuhan
 
