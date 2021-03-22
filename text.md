@@ -122,13 +122,14 @@ https://titel-kulturmagazin.net/2015/02/16/lyrik-und-barbarei/
 >To write a poem after Ausschwitz is barbaric.
 
 \- Theodor W. Adorno, Culture Critique and Society
+{: .caption}
 
 This quote is controversial and has been discussed at length by numerous people, which is not what I am going to do here. I want to talk about the reason why Adorno had to say it in the first place. While it is often wrongly interpreted as verdict, this is not actually what it says. It captures the feeling which lots of artists and critics had after the second world war: art has failed us. Art in the sense of the romantic artwork, with all its overwhelmingness and pathos. Art that was abused by the nazis to spread their ideology through manipulation of the recipients emotions. If art has the power to manipulate emotions - which I do believe it has - then this means that the artist has power over the listener. This power can be abused, which is a fundamental problem. To counter this many composers delved deeper and deeper into abstract music. This seemed fine to me at first, but then I read an interview with Pierre Schaeffer, in which he said this:
 
 >"You have to remind musicians of what Dante wrote over the Gates of Hell: Abandon hope all ye who enter here. If you enter, if you want to make music, you must abandon hope," Schaeffer warned. In the interview, Schaeffer also used the term ‘DoReMi' to mean traditional musical tuning, instrumentation, and arrangement. "There's no way out of traditional music," he opined. And, most darkly, Schaeffer told Hodgkinson: "Seeing that no one knew what to do anymore with DoReMi, maybe we had to look outside that. Unfortunately it took me forty years to conclude that nothing is possible outside DoReMi. In other words, I wasted my life."
 
 \- Pierre Schaeffer, Interview with Tim Hodgkinson for ReR[^pierre]
-{: .quote}
+{: .caption}
 
 If we do trust Pierre Schaeffer this paints a rather bleak image. At least it did for me, because I do empathize with his statements. Because if we can't continue with *DoReMi* as Adorno suggests and we can't make anything outside of *DoReMi*, what is there left to do?
 
