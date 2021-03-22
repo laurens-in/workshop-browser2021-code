@@ -46,6 +46,50 @@ playRecursive('C4', 20)
 document.getElementById("play-example2").addEventListener("click", () => playRecursive('C4', 20));
 </script>
 
+One more example:
+
+```js
+class Figure {
+    notes;
+    variation;
+
+    constructor(notes) {
+        this.notes = notes
+    }
+
+    next = () => {
+        this.variation = new Figure(this.notes.reverse().concat(this.notes.slice(2)))
+    }
+
+    playFigure = async () => {
+        for (const note of this.notes) {
+            await playSample(note);
+        }
+    }
+
+    playSample = (note) => {
+        sampler.play(note)
+        return new Promise((resolve) => audioContextTimers.setTimeout(resolve, 1000))
+    }
+}
+
+const notes = ['C4', 'D4', 'D#4']
+
+const someFigure = new Figure(notes);
+```
+
+<div class="flex-buttons">
+<button id="play-example3">.playFigure()</button>
+<button id="play-example4">.next()</button>
+<button id="play-example5">variation.playFigure()</button>
+</div>
+
+<script>
+document.getElementById("play-example3").addEventListener("click", () => someFigure.playFigure());
+document.getElementById("play-example4").addEventListener("click", () => someFigure.next());
+document.getElementById("play-example5").addEventListener("click", () => someFigure.variation.playFigure());
+</script>
+
 
 
 ## Something Data
