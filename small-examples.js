@@ -54,7 +54,7 @@ class SimplePlayer {
         this.currentIndex = start;
     }
 
-    play = (note, length, time, velocity) => {
+    play = (note, length, time, velocity = 0.3) => {
         if (note == this.playingNote) {
             this.currentIndex += 1;
         }
@@ -89,7 +89,7 @@ const sampler = new SimplePlayer(new SimpleSampler());
 // Recrusion - Example 1
 
 const countBack = (x) => {
-    if (x >= 0) return console.log(0); // stopping condition
+    if (x <= 0) return console.log(0); // stopping condition
     console.log(x);                    // instructions
     countBack(x - 1);                  // recursive call
 }
