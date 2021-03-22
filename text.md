@@ -117,6 +117,8 @@ We have established that the browser is an interesting medium that we can use to
 
 I will take a short moment to give some personal insight into my motivation for generative music and the fundamental problem of post war art that it might solve.
 
+https://titel-kulturmagazin.net/2015/02/16/lyrik-und-barbarei/
+
 >To write a poem after Ausschwitz is barbaric.
 
 \- Theodor W. Adorno, Culture Critique and Society
@@ -134,6 +136,7 @@ The answer for me at least was generative music. With generative music I can mov
 
 
 
+----
 
 
 
@@ -141,10 +144,7 @@ The answer for me at least was generative music. With generative music I can mov
 
 
 
-
-
-
-
+## Footnotes
 
 
 [^mcluhan]: Marshall McLuhan, The medium is the message, Monday Conference on ABC TV, https://www.youtube.com/watch?v=UoCrx0scCkM
