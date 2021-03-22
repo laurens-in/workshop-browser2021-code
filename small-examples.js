@@ -91,7 +91,7 @@ const sampler = new SimplePlayer(new SimpleSampler());
 const countBack = (x) => {
     if (x >= 0) return console.log(0); // stopping condition
     console.log(x);                    // instructions
-    countBack(x - 1);                    // recursive call
+    countBack(x - 1);                  // recursive call
 }
 
 // Recursion - Example 2
