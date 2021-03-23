@@ -8,7 +8,7 @@ permalink: /composition-as-code
 <script src="./bundled-libraries/audio-context-timers-bundle.js"></script>
 <script src="small-examples.js"></script>
 
-I will now try to show a how we can use concepts from programming in a way that allows us to think differently about music composition.
+I will try to show with a few examples how we can use concepts from programming as compositional means.  
 
 # Recursion
 
@@ -21,7 +21,7 @@ const countBack = (x) => {
     countBack(x-1);                    // recursive call
 }
 
-countBack(10)
+countBack(10) // check the browser console to see the output
 ```
 <button id="play-example1">Run</button>
 
@@ -29,7 +29,9 @@ countBack(10)
 document.getElementById("play-example1").addEventListener("click", () => countBack(10));
 </script>
 
-We can use recursion is essentially a means to structure our code and hence our composition. We can think about structuring time recursively:
+This is essentially the same thing we artists know all to well as **feedback**. Think about Alvin Luciers infamous piece *I'm Sitting In A Room* - which is one of the few pre-generative pieces I know that uses recursion as a compositional process. 
+
+We too can use recursion as a tool to generate temporal structure, but go even beyond that. But lets start with a simple example
 
 ```js
 const playRecursive = (note, length) => {
@@ -46,7 +48,18 @@ playRecursive('C4', 20)
 document.getElementById("play-example2").addEventListener("click", () => playRecursive('C4', 20));
 </script>
 
-One more example:
+I'm using a npm library called audio-context-timers here because the standard setTimeout method is not very accurate and can get throttled by the browser. Follow this footnote to find out more.[^context-timers]
+{: .caption}
+
+Here we are creating a simple effect where a note is repeated while the time between successive note is always doubled. To achieve the same effect in without recursion would result in quite messy and overly complicated code.
+
+We could also integrate pattern matching to have achieve a more complex result:
+
+```js
+// pattern matching would go here if it goes anywhere
+```
+
+But we can't just use recursion to create temporal structures and rhythms. Lets look at this example where we have a class that describes a musical `Figure`. The class has a property `variation` which - through calling the `Figure.next()` method - is assigned an new instance of the class `Figure`. We can call this process ad infintum to generate new variations of variations.
 
 ```js
 class Figure {
@@ -58,12 +71,12 @@ class Figure {
     }
 
     next = () => {
-        this.variation = new Figure(this.notes.reverse().concat(this.notes.slice(2)))
+        this.variation = new Figure(this.notes.reverse().concat(this.notes.slice(0,2)))
     }
 
     playFigure = async () => {
         for (const note of this.notes) {
-            await playSample(note);
+            await this.playSample(note);
         }
     }
 
@@ -90,17 +103,42 @@ document.getElementById("play-example4").addEventListener("click", () => someFig
 document.getElementById("play-example5").addEventListener("click", () => someFigure.variation.playFigure());
 </script>
 
+I used this process a bit more elaborate in [Live Eternal](https://live-eternal.ch): Every sequence has a base pattern and two variations, which again consist of base patterns and variations which allows me to build a kind of tree of related patterns.
+
+```js
+                                                              ---[variation]--->permute()---etc...
+                                                             /
+                               ---[variation]--->permute()---
+                              /                              \
+[base-pattern]---> permute()---                               ---[variation]
+                              \
+                               ---[variation]--->permute()---
+```
+
+You can read more about the specific implementation in my master thesis or look at the code on github.
+{: .caption}
 
 
-## Something Data
 
+## Representation of Musical Information
+
+One of the most important things we have to consider when making music with code is how to represent musical information within our program. This is of course important in all forms of composition and there is a certain tradition of composers inventing new ways to write scores in order to create new music. Code offers us the possibility to define data in whatever way we can represent digital data. To give you a few ideas:
+
+We could use a simple list of numbers representing pitches
 
 ```js
 const someMusicalData = [66, 23, 76, 89]
+```
 
+We could use nested lists to represent pairs of pitches and lengths. These values could also describe start and stop times of events, whose contents are described elsewhere in the program. These values are only really meaningful in the way we want them to be.
+
+```js
 const someOtherData = [[120, 500], [330, 800]]
+```
 
+We could have to completely unrelated lists of pitches and lengths and then calculate the cartesian product to get every possible combination of pitch and length and then go from there:
 
+```js
 const pitches = [100, 200]
 const lengths = [5, 7, 8]
 
@@ -114,8 +152,12 @@ cartesian(notes, pitches)
     [200, 7],
     [200, 8]
 ]
+```
 
+We can define a class which, in this example, could hold a sequence of pitches and a reference to the next sequence of pitches. This would allow us to connect sequences in chains, which could create loops within them or and change references etc.
 
+```js
+// Mabe a class? 
 class someStructure {
     pitches
     nextSequence;
@@ -127,3 +169,75 @@ class someStructure {
     }
 }
 ```
+ 
+For all the developers who get a headache when they see the dynamically typed classes of JavaScript, we could also use TypeScript to define a custom type for our musical element
+
+```js
+type Sound = {sample: String, playback_speed: number}
+
+const x: Sound = {sample: 'sounds/kick.wav', playback_speed: -0.5}
+```
+
+Instead of TypeScript we could also use PureScript and describe sound in a behavior pattern:
+
+```js
+scene ::  Number -> Behavior (AudioUnit D1)
+scene time = let
+      rad = pi * time
+    in
+      pure $ speaker
+         ( (gain' 0.1 $ sinOsc (440.0 + (10.0 * sin (2.3 * rad))))
+              :| (gain' 0.25 $ sinOsc (235.0 + (10.0 * sin (1.7 * rad))))
+              : (gain' 0.2 $ sinOsc (337.0 + (10.0 * sin rad)))
+              : (gain' 0.1 $ sinOsc (530.0 + (19.0 * (5.0 * sin rad))))
+              : Nil
+          )
+```
+
+Don't worry I don't get this one too. But just by looking at the code we can see that a piece composed in this manner must be fundamentally different than a piece which thinks of musical elements as objects.
+
+Last but not least we can use the Web Audio API directly to describe sound at the sample level - in this case white noise:
+
+```js
+class WhiteNoiseProcessor extends AudioWorkletProcessor {
+  process (inputs, outputs, parameters) {
+    const output = outputs[0]
+    output.forEach(channel => {
+      for (let i = 0; i < channel.length; i++) {
+        channel[i] = Math.random() * 2 - 1
+      }
+    })
+    return true
+  }
+}
+```
+
+This is only a fraction of the possibilities we have and I encourage you to find more ways - new ways - to represent music, as it will inevitably lead to new kinds of music.
+
+# Randomness & Repeatability
+
+```js
+const random = () => 10;
+
+// pure functional way
+const playNote = (x) => {
+    return x + 10;
+}
+
+console.log('pure function returns: ' + playNote(random()))
+
+// impure function
+const playNoteImp = (x) => {
+    random() + x;
+}
+
+console.log('impure function returns: ' + playNoteImp(10))
+
+// What's the difference?
+```
+
+Both functions return the same result, but they represent two fundamentally different styles of programming. The first function is written as a pure function, which means that it's output is only dependent on its input - nothing else. The second function is impure because its output is not related to its input.
+
+We have here a powerful compositional tool in our hands: A way to go from unpredictable data to predictable data and vice-versa.
+
+Lets look a bit more at the pure functional approach, as it gives us a lot of ways to structure 

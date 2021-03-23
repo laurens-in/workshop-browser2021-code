@@ -105,12 +105,6 @@ const playRecursive = (note, length) => {
 
 // Recursion - Example 3
 
-// HELPER FUNCTION
-const playSample = (note) => {
-    sampler.play(note)
-    return new Promise((resolve) => audioContextTimers.setTimeout(resolve, 1000))
-}
-
 class Figure {
     notes;
     variation;
@@ -120,12 +114,12 @@ class Figure {
     }
 
     next = () => {
-        this.variation = new Figure(this.notes.reverse().concat(this.notes.slice(2)))
+        this.variation = new Figure(this.notes.reverse().concat(this.notes.slice(0, 2)))
     }
 
     playFigure = async () => {
         for (const note of this.notes) {
-            await playSample(note);
+            await this.playSample(note);
         }
     }
 
