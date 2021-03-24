@@ -316,3 +316,6 @@ document.getElementById("play-example8").addEventListener("click", () => pattern
 document.getElementById("play-example9").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_seeded)));
 </script>
 
+I'm using a npm library called seedrandom here because JavaScript does not support random seeding out of the box.[^seedrandom]
+{: .caption}
+
