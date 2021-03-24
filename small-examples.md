@@ -59,9 +59,22 @@ Here we are creating a simple sort of "reverse bouncing" effect where a note is 
 We could also integrate pattern matching to have achieve a more complex result:
 
 ```js
-// pattern matching would go here if it goes anywhere
-we could use pattern matching to mix different elements into our composition, text, numbers etc.
+const notes_pattern = [700, 600, 500, 400, 300, 200, 100, 50]
+
+const patternMatch = (x, y = 250) => {
+    z.matches(x)(
+        (head, tail = []) => { sampler.play(head); console.log("playing note: ", head) }, // stop condition
+        (head, tail) => { sampler.play(head); console.log("playing note: ", head); audioContextTimers.setTimeout(() => patternMatch(tail, y * 1.25), y) },
+    )
+}
+
+patternMatch(notes_pattern);
 ```
+<button id="play-example3">Run</button>
+
+<script>
+document.getElementById("play-example3").addEventListener("click", () => patternMatch(notes_pattern));
+</script>
 
 But we can't just use recursion to create temporal structures and rhythms. Lets look at this example where we have a class that describes a musical `Figure`. The class has a property `variation` which - through calling the `Figure.next()` method - is assigned an new instance of the class `Figure`. We can call this process ad infintum to generate new variations of variations.
 
@@ -96,15 +109,15 @@ const someFigure = new Figure(notes);
 ```
 
 <div class="flex-buttons">
-<button id="play-example3">.playFigure()</button>
-<button id="play-example4">.next()</button>
-<button id="play-example5">variation.playFigure()</button>
+<button id="play-example4">.playFigure()</button>
+<button id="play-example5">.next()</button>
+<button id="play-example6">variation.playFigure()</button>
 </div>
 
 <script>
-document.getElementById("play-example3").addEventListener("click", () => someFigure.playFigure());
-document.getElementById("play-example4").addEventListener("click", () => someFigure.next());
-document.getElementById("play-example5").addEventListener("click", () => someFigure.variation.playFigure());
+document.getElementById("play-example4").addEventListener("click", () => someFigure.playFigure());
+document.getElementById("play-example5").addEventListener("click", () => someFigure.next());
+document.getElementById("play-example6").addEventListener("click", () => someFigure.variation.playFigure());
 </script>
 
 I used this process a bit more elaborate in [Live Eternal](https://live-eternal.ch): Every sequence has a base pattern and two variations, which again consist of base patterns and variations which allows me to build a kind of tree of related patterns.
@@ -240,10 +253,10 @@ console.log('impure function returns: ' + playNoteImp(10))
 // What's the difference?
 ```
 
-<button id="play-example6">Run</button>
+<button id="play-example7">Run</button>
 
 <script>
-document.getElementById("play-example6").addEventListener("click", () => {console.log('pure function returns: ' + playNote(random()));console.log('impure function returns: ' + playNoteImp(10))});
+document.getElementById("play-example7").addEventListener("click", () => {console.log('pure function returns: ' + playNote(random()));console.log('impure function returns: ' + playNoteImp(10))});
 </script>
 
 Both functions return the same result, but they represent two fundamentally different styles of programming. The first function is written as a pure function, which means that it's output is only dependent on its input - nothing else. The second function is impure because its output is not related to its input.
@@ -288,12 +301,12 @@ patternMatch(random_pattern_1.concat(random_pattern_seeded))
 ```
 
 <div class="flex-buttons">
-<button id="play-example7">Play patterns 1 & 2</button>
-<button id="play-example8">Play patterns 1 & seeded</button>
+<button id="play-example8">Play patterns 1 & 2</button>
+<button id="play-example9">Play patterns 1 & seeded</button>
 </div>
 
 <script>
-document.getElementById("play-example7").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_2)));
-document.getElementById("play-example8").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_seeded)));
+document.getElementById("play-example8").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_2)));
+document.getElementById("play-example9").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_seeded)));
 </script>
 

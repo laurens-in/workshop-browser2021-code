@@ -102,8 +102,19 @@ const playRecursive = (note, length) => {
     audioContextTimers.setTimeout(() => playRecursive(note, length * 2), length)
 }
 
-
 // Recursion - Example 3
+
+const notes_pattern = [700, 600, 500, 400, 300, 200, 100, 50]
+
+const patternMatch = (x, y = 250) => {
+    z.matches(x)(
+        (head, tail = []) => { sampler.play(head); console.log("playing note: ", head) }, // stop condition
+        (head, tail) => { sampler.play(head); console.log("playing note: ", head); audioContextTimers.setTimeout(() => patternMatch(tail, y * 1.25), y) },
+    )
+}
+
+
+// Recursion - Example 4
 
 class Figure {
     notes;
