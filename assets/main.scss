@@ -71,7 +71,7 @@ pre, code {
 }
 
 span.kd {
-  color: #70e205;
+  color: $alternate-color;
 }
 
 span.k {
@@ -79,7 +79,7 @@ span.k {
 }
 
 span.nx {
-  color: #1869ff;
+  color: $font-color;
 }
 
 .footnotes {
