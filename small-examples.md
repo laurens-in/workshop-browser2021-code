@@ -319,3 +319,47 @@ document.getElementById("play-example9").addEventListener("click", () => pattern
 I'm using a npm library called seedrandom here because JavaScript does not support random seeding out of the box.[^seedrandom]
 {: .caption}
 
+Lets go further:
+
+```js
+const checkCookie = () => {
+    const hasCookie = !(document.cookie === '')
+    return hasCookie
+}
+
+const saveCookie = (inputName, seedState) => {
+    document.cookie = ""
+    document.cookie = "name=" + inputName;
+    document.cookie = "random_seed=" + JSON.stringify(seedState);
+}
+
+const getCookie = () => {
+    const name = document.cookie.split('; ').find(row => row.startsWith('name=')).split('=')[1]
+    const seed = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('random_seed')).split('=')[1])
+    console.log(`Welcome back, ${name} :)`)
+    return seed
+}
+
+const cookieGen = new Math.seedrandom("", { state: getCookie() })
+    
+// lets generate 6 notes, the first three will be the same as in our last example!
+const random_pattern_cookie = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
+
+patternMatch(random_pattern_cookie);
+```
+
+<div class="flex-buttons">
+<button id="play-example10">checkCookie</button>
+<button id="play-example11">saveCookie</button>
+<button id="play-example12">getCookie</button>
+<button id="play-example13">Play!</button>
+
+</div>
+
+<script>
+document.getElementById("play-example10").addEventListener("click", () => checkCookie());
+document.getElementById("play-example11").addEventListener("click", () => saveCookie());
+document.getElementById("play-example12").addEventListener("click", () => getCookie());
+document.getElementById("play-example13").addEventListener("click", () => playCookiePattern());
+</script>
+

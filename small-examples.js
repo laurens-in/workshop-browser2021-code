@@ -200,7 +200,7 @@ const saved = randomGen.state();
 // make 4 more notes with randomGen
 const random_pattern_2 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
 
-// play both patterns
+// play pattern 1 & 2
 // patternMatch(random_pattern_1.concat(random_pattern_2));
 
 
@@ -210,9 +210,35 @@ const otherGen = new Math.seedrandom("", { state: saved });
 // make 4 more notes with otherGen
 const random_pattern_seeded = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
 
-// play first and seeded pattern
+// play pattern 1 & seeded, this will be the exact same as 1 & 2!
 // patternMatch(random_pattern_1.concat(random_pattern_seeded));
 
 
+// Seeding + Cookie
 
+const checkCookie = () => {
+    const hasCookie = !(document.cookie === '')
+    return hasCookie
+}
+
+const saveCookie = (inputName, seedState) => {
+    document.cookie = ""
+    document.cookie = "name=" + inputName;
+    document.cookie = "random_seed=" + JSON.stringify(seedState);
+}
+
+const getCookie = () => {
+    const name = document.cookie.split('; ').find(row => row.startsWith('name=')).split('=')[1]
+    const seed = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('random_seed')).split('=')[1])
+    console.log(`Welcome back, ${name} :)`)
+    return seed
+}
+
+
+const playCookiePattern = () => {
+    const cookieGen = new Math.seedrandom("", { state: getCookie() })
+    // lets generate 6 notes, the first three will be the same as in our last example!
+    const random_pattern_cookie = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
+    patternMatch(random_pattern_cookie);
+}
 
