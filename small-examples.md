@@ -362,6 +362,6 @@ patternMatch(random_pattern_cookie);
 document.getElementById("play-example10").addEventListener("click", () => checkCookie());
 document.getElementById("play-example11").addEventListener("click", () => saveCookie(inputName,savedSeedState));
 document.getElementById("play-example12").addEventListener("click", () => getCookie());
-document.getElementById("play-example13").addEventListener("click", () => playCookiePattern());
+document.getElementById("play-example13").addEventListener("click", () => patternMatch(random_pattern_cookie));
 </script>
 

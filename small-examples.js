@@ -239,10 +239,11 @@ const getCookie = () => {
 // saveCookie(inputName, savedSeedState);
 
 
-const playCookiePattern = () => {
-    const cookieGen = new Math.seedrandom("", { state: getCookie() })
-    // lets generate 6 notes, the first three will be the same as in our last example!
-    const random_pattern_cookie = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
-    patternMatch(random_pattern_cookie);
-}
+const cookieGen = new Math.seedrandom("", { state: getCookie() })
+
+// lets generate 6 notes, the first three will be the same as in our last example!
+const random_pattern_cookie = [randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen())];
+
+// patternMatch(random_pattern_cookie);
+
 
