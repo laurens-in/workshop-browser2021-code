@@ -350,15 +350,17 @@ patternMatch(getCookiePattern());
 <div class="flex-buttons">
 <button id="play-example10">checkCookie</button>
 <button id="play-example11">saveCookie</button>
-<button id="play-example12">getCookie</button>
-<button id="play-example13">Play!</button>
+<button id="play-example11">deleteCookie</button>
+<button id="play-example13">getCookie</button>
+<button id="play-example14">Play!</button>
 
 </div>
 
 <script>
 document.getElementById("play-example10").addEventListener("click", () => checkCookie());
 document.getElementById("play-example11").addEventListener("click", () => saveCookie(inputName,savedSeedState));
-document.getElementById("play-example12").addEventListener("click", () => console.log(getCookiePattern()));
-document.getElementById("play-example13").addEventListener("click", () => patternMatch(getCookiePattern()));
+document.getElementById("play-example12").addEventListener("click", () => deleteCookie();
+document.getElementById("play-example13").addEventListener("click", () => console.log(getCookiePattern()));
+document.getElementById("play-example14").addEventListener("click", () => patternMatch(getCookiePattern()));
 </script>
 
