@@ -1,14 +1,16 @@
 ---
 layout: page
 title: Composition As Code
-permalink: /composition-as-code
+permalink: /practice
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.13/Tone.js" integrity="sha512-SAB2YrHeaZfb6W1w+tAMm+IUICzUMyf7TJ8upY+NjLYl8jseufUW4yYzoSHfNL9N2rzDlw5PWJrf7rPIQ6VhNw==" crossorigin="anonymous"></script>
 <script src="./bundled-libraries/z-pattern-matching-bundle.js"></script>
 <script src="./bundled-libraries/audio-context-timers-bundle.js"></script>
 <script src="small-examples.js"></script>
 
-I will try to show with a few examples how we can use concepts from programming as compositional means.  
+# Composition Through Code
+
+I will try to show with a few examples how we can think about programming concepts and patterns in terms of composition. This is by no means a definitive list, it should serve to give you an idea of the mindset with which we can approach composition from a coding point of view. I encourage you to apply this mindset to the patterns and concepts in your own workflow and whenever you come across a new way of coding ask yourself, how might I use this in composition?
 
 # Recursion
 
