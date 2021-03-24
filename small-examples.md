@@ -57,6 +57,7 @@ We could also integrate pattern matching to have achieve a more complex result:
 
 ```js
 // pattern matching would go here if it goes anywhere
+we could use pattern matching to mix different elements into our composition, text, numbers etc.
 ```
 
 But we can't just use recursion to create temporal structures and rhythms. Lets look at this example where we have a class that describes a musical `Figure`. The class has a property `variation` which - through calling the `Figure.next()` method - is assigned an new instance of the class `Figure`. We can call this process ad infintum to generate new variations of variations.
@@ -215,6 +216,9 @@ class WhiteNoiseProcessor extends AudioWorkletProcessor {
 This is only a fraction of the possibilities we have and I encourage you to find more ways - new ways - to represent music, as it will inevitably lead to new kinds of music.
 
 # Randomness & Repeatability
+
+# Random seeding bruh
+<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js" integrity="sha512-+Ru50BzEpZjlFzVnjSmJfYFPFfY2hS0Kjlu/IvqaJoux7maF5lJrRVUJWJ2LevPls7rd242GLbWEt+zAo4OVVQ==" crossorigin="anonymous"></script>
 
 ```js
 const random = () => 10;
