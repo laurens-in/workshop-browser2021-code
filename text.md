@@ -4,7 +4,7 @@ title: Theory
 permalink: /theory
 ---
 
-# The Browser, Genrative Music & A Bit Of Perspective
+# The Browser, Generative Music & A Bit Of Perspective
 
 **Disclaimer**
 {: .caption}
