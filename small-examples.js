@@ -247,6 +247,8 @@ const getCookiePattern = () => {
 
 // patternMatch(getCookiePattern());
 
+const serverData = { name: inputName, random_seed: JSON.stringify(savedSeedState) }
+
 async function postData(data) {
     // Default options are marked with *
     const response = await fetch('https://unexpected-meowing-swoop.glitch.me/cookie', {
