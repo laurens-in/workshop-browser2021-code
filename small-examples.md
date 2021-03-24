@@ -3,6 +3,9 @@ layout: page
 title: Practice
 permalink: /practice
 ---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"
+        integrity="sha512-+Ru50BzEpZjlFzVnjSmJfYFPFfY2hS0Kjlu/IvqaJoux7maF5lJrRVUJWJ2LevPls7rd242GLbWEt+zAo4OVVQ=="
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.13/Tone.js" integrity="sha512-SAB2YrHeaZfb6W1w+tAMm+IUICzUMyf7TJ8upY+NjLYl8jseufUW4yYzoSHfNL9N2rzDlw5PWJrf7rPIQ6VhNw==" crossorigin="anonymous"></script>
 <script src="./bundled-libraries/z-pattern-matching-bundle.js"></script>
 <script src="./bundled-libraries/audio-context-timers-bundle.js"></script>
@@ -75,6 +78,9 @@ patternMatch(notes_pattern);
 <script>
 document.getElementById("play-example3").addEventListener("click", () => patternMatch(notes_pattern));
 </script>
+
+I'm using a npm library called z-pattern-matching here because JavaScript does not support pattern matching out of the box.[^pattern-matching]
+{: .caption}
 
 But we can't just use recursion to create temporal structures and rhythms. Lets look at this example where we have a class that describes a musical `Figure`. The class has a property `variation` which - through calling the `Figure.next()` method - is assigned an new instance of the class `Figure`. We can call this process ad infintum to generate new variations of variations.
 
