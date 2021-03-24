@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Background
+title: Theory
 permalink: /theory
 ---
 
 # The Browser, Genrative Music & A Bit Of Perspective
-
-In this workshop I will try to give a few reasons why we might want to consider making music in the browser and - as a consequence of that - generative music. I will try to give some perspective on how we can fit this into the broader context of modern art & media theory history. I will also give some personal insights into how these concepts influenced me as a composer.
-
 
 **Disclaimer**
 {: .caption}
