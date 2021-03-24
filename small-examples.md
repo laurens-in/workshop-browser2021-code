@@ -220,9 +220,6 @@ This is only a fraction of the possibilities we have and I encourage you to find
 
 ## Randomness & Repeatability
 
-# Random seeding bruh
-<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js" integrity="sha512-+Ru50BzEpZjlFzVnjSmJfYFPFfY2hS0Kjlu/IvqaJoux7maF5lJrRVUJWJ2LevPls7rd242GLbWEt+zAo4OVVQ==" crossorigin="anonymous"></script>
-
 ```js
 const random = () => 10;
 
@@ -243,8 +240,60 @@ console.log('impure function returns: ' + playNoteImp(10))
 // What's the difference?
 ```
 
+<button id="play-example6">Run</button>
+
+<script>
+document.getElementById("play-example6").addEventListener("click", () => {console.log('pure function returns: ' + playNote(random()));console.log('impure function returns: ' + playNoteImp(10))});
+</script>
+
 Both functions return the same result, but they represent two fundamentally different styles of programming. The first function is written as a pure function, which means that it's output is only dependent on its input - nothing else. The second function is impure because its output is not related to its input.
 
 We have here a powerful compositional tool in our hands: A way to go from unpredictable data to predictable data and vice-versa.
 
-Lets look a bit more at the pure functional approach, as it gives us a lot of ways to structure 
+Another thing we can do to control randomness is random seeding. Consider this example:
+
+```js
+// Random Seeding
+
+// some input for example a name
+const inputName = "Jane Doe"
+
+// we use this to seed a random generator
+const randomGen = new Math.seedrandom(inputName, { state: true });
+
+// a small helper function that will return a value between 100 and 700 which we will use as a frequency
+const randomNote = (x) => Math.ceil((x * 600) + 100);
+
+
+// generate 3 random notes
+const random_pattern_1 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
+
+// save the state of the random generator
+const saved = randomGen.state();
+
+// make 4 more notes with randomGen
+const random_pattern_2 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
+
+// play pattern 1 & 2
+patternMatch(random_pattern_1.concat(random_pattern_2))
+
+// create a new random gen from the saved state
+const otherGen = new Math.seedrandom("", { state: saved });
+
+// make 4 more notes with otherGen
+const random_pattern_seeded = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
+
+// play pattern 1 & seeded, it will be the exact same as pattern 2!
+patternMatch(random_pattern_1.concat(random_pattern_seeded))
+```
+
+<div class="flex-buttons">
+<button id="play-example7">Play patterns 1 & 2</button>
+<button id="play-example8">Play patterns 1 & seeded</button>
+</div>
+
+<script>
+document.getElementById("play-example7").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_2)));
+document.getElementById("play-example8").addEventListener("click", () => patternMatch(random_pattern_1.concat(random_pattern_seeded)));
+</script>
+

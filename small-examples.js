@@ -153,8 +153,54 @@ const cartesian =
 // got it form here: https://stackoverflow.com/questions/12303989/cartesian-product-of-multiple-arrays-in-javascript
 
 
-// some TypeScript maybe? some PureScript?
+// Randomness & Repeatability
 
+const random = () => 10;
+
+// pure functional way
+const playNote = (x) => {
+    return x + 10;
+}
+
+// impure function
+const playNoteImp = (x) => {
+    random() + x;
+}
+
+
+// Random Seeding
+
+// some input for example a name
+const inputName = "Jane Doe"
+
+// we use this to seed a random generator
+const randomGen = new Math.seedrandom(inputName, { state: true });
+
+// a small helper function that will return a value between 100 and 700 which we will use as a frequency
+const randomNote = (x) => Math.ceil((x * 600) + 100);
+
+
+// generate 3 random notes
+const random_pattern_1 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
+
+// save the state of the random generator
+const saved = randomGen.state();
+
+// make 4 more notes with randomGen
+const random_pattern_2 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
+
+// play both patterns
+// patternMatch(random_pattern_1.concat(random_pattern_2));
+
+
+// create a new random gen from the saved state
+const otherGen = new Math.seedrandom("", { state: saved });
+
+// make 4 more notes with otherGen
+const random_pattern_seeded = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
+
+// play first and seeded pattern
+// patternMatch(random_pattern_1.concat(random_pattern_seeded));
 
 
 
