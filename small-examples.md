@@ -335,6 +335,11 @@ const saveCookie = (inputName, seedState) => {
     console.log(`See you soon, ${inputName}`)
 }
 
+const deleteCookie = () => {
+    document.cookie = "name= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+    document.cookie = "random_seed= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+}
+
 const getCookiePattern = () => {
     const name = document.cookie.split('; ').find(row => row.startsWith('name=')).split('=')[1]
     const seed = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('random_seed')).split('=')[1])
