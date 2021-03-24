@@ -229,17 +229,16 @@ const saveCookie = (inputName, seedState) => {
     console.log(`See you soon, ${inputName}`)
 }
 
+
+let cookieGen;
 const getCookie = () => {
     const name = document.cookie.split('; ').find(row => row.startsWith('name=')).split('=')[1]
     const seed = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('random_seed')).split('=')[1])
     console.log(`Welcome back, ${name} :)`)
-    return seed
+    cookieGen = new Math.seedrandom("", { state: seed })
 }
 
 // saveCookie(inputName, savedSeedState);
-
-
-const cookieGen = new Math.seedrandom("", { state: getCookie() })
 
 // lets generate 6 notes, the first three will be the same as in our last example!
 const random_pattern_cookie = [randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen())];
