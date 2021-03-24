@@ -8,8 +8,8 @@ theme: minima
 skin: dark
 header_pages:
   - index.md
-  - examples.md
   - text.md
+  - small-examples.md
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
