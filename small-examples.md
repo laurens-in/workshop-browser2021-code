@@ -364,7 +364,7 @@ patternMatch(getCookiePattern());
 <script>
 document.getElementById("play-example10").addEventListener("click", () => checkCookie());
 document.getElementById("play-example11").addEventListener("click", () => saveCookie(inputName,savedSeedState));
-document.getElementById("play-example12").addEventListener("click", () => deleteCookie();
+document.getElementById("play-example12").addEventListener("click", () => deleteCookie());
 document.getElementById("play-example13").addEventListener("click", () => console.log(getCookiePattern()));
 document.getElementById("play-example14").addEventListener("click", () => patternMatch(getCookiePattern()));
 </script>
