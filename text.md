@@ -6,6 +6,12 @@ permalink: /theory
 
 # The Browser, Generative Music & A Bit Of Perspective
 
+  - [Medium - Message](#medium---message)
+  - [A New Age](#a-new-age)
+  - [Generative Music & Authority](#generative-music--authority)
+  - [Trust & Free Software](#trust--free-software)
+  - [Footnotes](#footnotes)
+
 **Disclaimer**
 {: .caption}
 
@@ -74,7 +80,7 @@ expect it not only to exploit the proletariat with
 increasing intensity, but ultimately to create conditions
 which would make it possible to abolish capitalism itself.
 
-\- Walter Benjamin, The Work of Art in the Age of Mechanical Reproduction, Preface[^benjamin-2]
+\- Walter Benjamin[^benjamin-2]
 {: .caption}
 
 For Benjamin mass culture - in a bigger picture - seems to play a role in the creation of these conditions to abolish capitalism. Benjamin writes more about the relationship between politics and art in his epilogue, which I encourage everyone to read, but which is beyond to scope of what we are talking about here. What is important here is that for the first time, mass culture becomes possible through capitalistic means of production, which in term has had a huge influence on the way we not only consume but make art.
@@ -164,10 +170,9 @@ I will leave it at this, but i would like to point to a more recent development 
 
 ## Footnotes
 
-
 [^mcluhan]: Marshall McLuhan, The medium is the message, Monday Conference on ABC TV, [https://www.youtube.com/watch?v=UoCrx0scCkM](https://www.youtube.com/watch?v=UoCrx0scCkM){:target="_blank" rel="noopener"} 
 
-[^mcluhan-podcast]: Theory & Philosophy Podcast, The Medium is the Message | Marshall McLuhan, 03. February 2021, [https://theoretician.podbean.com/e/the-medium-is-the-message-marshall-mcluhan-keyword/](https://theoretician.podbean.com/e/the-medium-is-the-message-marshall-mcluhan-keyword/){:target="_blank" rel="noopener"}
+[^mcluhan-podcast]: Theory & Philosophy Podcast, The Medium is the Message / Marshall McLuhan, 03. February 2021, [https://theoretician.podbean.com/e/the-medium-is-the-message-marshall-mcluhan-keyword/](https://theoretician.podbean.com/e/the-medium-is-the-message-marshall-mcluhan-keyword/){:target="_blank" rel="noopener"}
 
 [^benjamin-1]: Benjamin, Walter, The Work Of Art In The Age Of Mechanical Reproduction, 1936, Chapter II
 
