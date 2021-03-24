@@ -247,4 +247,19 @@ const getCookiePattern = () => {
 
 // patternMatch(getCookiePattern());
 
+async function postData(data) {
+    // Default options are marked with *
+    const response = await fetch('https://unexpected-meowing-swoop.glitch.me/cookie', {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+
+}
+
+
 
