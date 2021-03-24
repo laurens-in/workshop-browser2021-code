@@ -335,19 +335,16 @@ const saveCookie = (inputName, seedState) => {
     console.log(`See you soon, ${inputName}`)
 }
 
-const getCookie = () => {
+const getCookiePattern = () => {
     const name = document.cookie.split('; ').find(row => row.startsWith('name=')).split('=')[1]
     const seed = JSON.parse(document.cookie.split('; ').find(row => row.startsWith('random_seed')).split('=')[1])
     console.log(`Welcome back, ${name} :)`)
-    return seed
+    const cookieGen = new Math.seedrandom("", { state: seed })
+    const random_pattern_cookie = [randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen()), randomNote(cookieGen())];
+    return random_pattern_cookie;
 }
 
-const cookieGen = new Math.seedrandom("", { state: getCookie() })
-    
-// lets generate 6 notes, the first three will be the same as in our last example!
-const random_pattern_cookie = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
-
-patternMatch(random_pattern_cookie);
+patternMatch(getCookiePattern());
 ```
 
 <div class="flex-buttons">
@@ -361,7 +358,7 @@ patternMatch(random_pattern_cookie);
 <script>
 document.getElementById("play-example10").addEventListener("click", () => checkCookie());
 document.getElementById("play-example11").addEventListener("click", () => saveCookie(inputName,savedSeedState));
-document.getElementById("play-example12").addEventListener("click", () => getCookie());
-document.getElementById("play-example13").addEventListener("click", () => patternMatch(random_pattern_cookie));
+document.getElementById("play-example12").addEventListener("click", () => console.log(getCookiePattern()));
+document.getElementById("play-example13").addEventListener("click", () => patternMatch(getCookiePattern()));
 </script>
 
