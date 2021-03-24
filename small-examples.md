@@ -324,6 +324,7 @@ Lets go further:
 ```js
 const checkCookie = () => {
     const hasCookie = !(document.cookie === '')
+    console.log(hasCookie);
     return hasCookie
 }
 
@@ -331,6 +332,7 @@ const saveCookie = (inputName, seedState) => {
     document.cookie = ""
     document.cookie = "name=" + inputName;
     document.cookie = "random_seed=" + JSON.stringify(seedState);
+    console.log(`See you soon, ${inputName}`)
 }
 
 const getCookie = () => {
@@ -358,7 +360,7 @@ patternMatch(random_pattern_cookie);
 
 <script>
 document.getElementById("play-example10").addEventListener("click", () => checkCookie());
-document.getElementById("play-example11").addEventListener("click", () => saveCookie());
+document.getElementById("play-example11").addEventListener("click", () => saveCookie(inputName,savedSeedState));
 document.getElementById("play-example12").addEventListener("click", () => getCookie());
 document.getElementById("play-example13").addEventListener("click", () => playCookiePattern());
 </script>

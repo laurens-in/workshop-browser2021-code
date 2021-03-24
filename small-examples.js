@@ -195,7 +195,7 @@ const randomNote = (x) => Math.ceil((x * 600) + 100);
 const random_pattern_1 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
 
 // save the state of the random generator
-const saved = randomGen.state();
+const savedSeedState = randomGen.state();
 
 // make 4 more notes with randomGen
 const random_pattern_2 = [randomNote(randomGen()), randomNote(randomGen()), randomNote(randomGen())];
@@ -205,7 +205,7 @@ const random_pattern_2 = [randomNote(randomGen()), randomNote(randomGen()), rand
 
 
 // create a new random gen from the saved state
-const otherGen = new Math.seedrandom("", { state: saved });
+const otherGen = new Math.seedrandom("", { state: savedSeedState });
 
 // make 4 more notes with otherGen
 const random_pattern_seeded = [randomNote(otherGen()), randomNote(otherGen()), randomNote(otherGen())];
@@ -218,6 +218,7 @@ const random_pattern_seeded = [randomNote(otherGen()), randomNote(otherGen()), r
 
 const checkCookie = () => {
     const hasCookie = !(document.cookie === '')
+    console.log(hasCookie);
     return hasCookie
 }
 
@@ -225,6 +226,7 @@ const saveCookie = (inputName, seedState) => {
     document.cookie = ""
     document.cookie = "name=" + inputName;
     document.cookie = "random_seed=" + JSON.stringify(seedState);
+    console.log(`See you soon, ${inputName}`)
 }
 
 const getCookie = () => {
@@ -233,6 +235,8 @@ const getCookie = () => {
     console.log(`Welcome back, ${name} :)`)
     return seed
 }
+
+// saveCookie(inputName, savedSeedState);
 
 
 const playCookiePattern = () => {
