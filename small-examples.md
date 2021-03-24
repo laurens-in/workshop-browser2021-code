@@ -12,9 +12,10 @@ permalink: /practice
 
 I will try to show with a few examples how we can think about programming concepts and patterns in terms of composition. This is by no means a definitive list, it should serve to give you an idea of the mindset with which we can approach composition from a coding point of view. I encourage you to apply this mindset to the patterns and concepts in your own workflow and whenever you come across a new way of coding ask yourself, how might I use this in composition?
 
-# Recursion
 
-Recursion is a powerful concept in programming. Its essentially a process which calls itself in its own definition.
+## Recursion
+
+Programming - as music - is essentially about structuring events. Recursion is one of the concepts we can use to generate structure. If you are not familiar with the concept: A recursive function is a function which calls itself in its own definition.
 
 ```js
 const countBack = (x) => {
@@ -33,7 +34,7 @@ document.getElementById("play-example1").addEventListener("click", () => countBa
 
 This is essentially the same thing we artists know all to well as **feedback**. Think about Alvin Luciers infamous piece *I'm Sitting In A Room* - which is one of the few pre-generative pieces I know that uses recursion as a compositional process. 
 
-We too can use recursion as a tool to generate temporal structure, but go even beyond that. But lets start with a simple example
+We could think about using recursion to generate a simple temporal structure like this:
 
 ```js
 const playRecursive = (note, length) => {
@@ -53,7 +54,7 @@ document.getElementById("play-example2").addEventListener("click", () => playRec
 I'm using a npm library called audio-context-timers here because the standard setTimeout method is not very accurate and can get throttled by the browser. Follow this footnote to find out more.[^context-timers]
 {: .caption}
 
-Here we are creating a simple effect where a note is repeated while the time between successive note is always doubled. To achieve the same effect in without recursion would result in quite messy and overly complicated code.
+Here we are creating a simple sort of "reverse bouncing" effect where a note is repeated while the time between successive notes is always doubled. To achieve the same effect without recursion would certainly be possible, but the idea kind of begs for a recursive implementation or if we turn it around, some ideas we can only get to by thinking recursively. We need to think about how to get from one step to another by a transformation of a set of inputs to a set of outputs.
 
 We could also integrate pattern matching to have achieve a more complex result:
 
@@ -123,7 +124,7 @@ You can read more about the specific implementation in my master thesis or look 
 
 
 
-## Representation of Musical Information
+### Representation of Musical Information
 
 One of the most important things we have to consider when making music with code is how to represent musical information within our program. This is of course important in all forms of composition and there is a certain tradition of composers inventing new ways to write scores in order to create new music. Code offers us the possibility to define data in whatever way we can represent digital data. To give you a few ideas:
 
@@ -217,7 +218,7 @@ class WhiteNoiseProcessor extends AudioWorkletProcessor {
 
 This is only a fraction of the possibilities we have and I encourage you to find more ways - new ways - to represent music, as it will inevitably lead to new kinds of music.
 
-# Randomness & Repeatability
+## Randomness & Repeatability
 
 # Random seeding bruh
 <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js" integrity="sha512-+Ru50BzEpZjlFzVnjSmJfYFPFfY2hS0Kjlu/IvqaJoux7maF5lJrRVUJWJ2LevPls7rd242GLbWEt+zAo4OVVQ==" crossorigin="anonymous"></script>
