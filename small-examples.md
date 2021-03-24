@@ -355,7 +355,7 @@ patternMatch(getCookiePattern());
 <div class="flex-buttons">
 <button id="play-example10">checkCookie</button>
 <button id="play-example11">saveCookie</button>
-<button id="play-example11">deleteCookie</button>
+<button id="play-example12">deleteCookie</button>
 <button id="play-example13">getCookie</button>
 <button id="play-example14">Play!</button>
 
