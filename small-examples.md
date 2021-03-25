@@ -417,7 +417,7 @@ async function getData() {
 <div class="flex-buttons">
 
 <button id="play-example16">Send cookie.</button>
-<button onclick="location.href='https://laurens-in.github.io/cookie-tester';" value="Open other page."></button>
+<button onclick="location.href='https://laurens-in.github.io/cookie-test/';">Open other page.</button>
 
 </div>
 
