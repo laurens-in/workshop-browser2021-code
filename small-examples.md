@@ -59,7 +59,7 @@ I'm using a npm library called audio-context-timers here because the standard se
 
 Here we are creating a simple sort of "reverse bouncing" effect where a note is repeated while the time between successive notes is always doubled. To achieve the same effect without recursion would certainly be possible, but the idea kind of begs for a recursive implementation or if we turn it around, some ideas we can only get to by thinking recursively. We need to think about how to get from one step to another by a transformation of a set of inputs to a set of outputs.
 
-We could also integrate pattern matching to have achieve a more complex result:
+We could also integrate pattern matching to have achieve a more complex result, because it allows us to iterate over an array of values recursively:
 
 ```js
 const notes_pattern = [700, 600, 500, 400, 300, 200, 100, 50]
@@ -319,7 +319,7 @@ document.getElementById("play-example9").addEventListener("click", () => pattern
 I'm using a npm library called seedrandom here because JavaScript does not support random seeding out of the box.[^seedrandom]
 {: .caption}
 
-Lets go further:
+Lets go further and set our saved random seed as a cookie, so the next time we visit the page we can retrieve it and continue where we left of:
 
 ```js
 const checkCookie = () => {
@@ -425,3 +425,18 @@ async function getData() {
 
 document.getElementById("play-example16").addEventListener("click", () => postData(serverData));
 </script>
+
+
+----
+
+## Libraries
+
+[^context-timers]: Audio-Context-Timers, [https://github.com/chrisguttandin/audio-context-timers](https://github.com/chrisguttandin/audio-context-timers){:target="_blank" rel="noopener"}
+
+[^pattern-matching]: Z-Pattern-Matching, [https://github.com/z-pattern-matching/z](https://github.com/z-pattern-matching/z){:target="_blank" rel="noopener"}
+
+[^seedrandom]: Seedrandom, [https://github.com/davidbau/seedrandom](https://github.com/davidbau/seedrandom){:target="_blank" rel="noopener"}
+
+
+
+
