@@ -379,15 +379,13 @@ const serverData = { name: inputName, random_seed: JSON.stringify(savedSeedState
 
 // we will call this function on this page to send our information to the server
 async function postData(data) {
-    // Default options are marked with *
     const response = await fetch('https://unexpected-meowing-swoop.glitch.me/cookie', {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         credentials: 'include',
         headers: {
             'Content-Type': 'application/json'
-            // 'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
+        body: JSON.stringify(data)
     });
     response.json().then(data => console.log(data));
 
@@ -395,21 +393,21 @@ async function postData(data) {
 
 // we will use this function on the other page to retrieve the information
 async function getData() {
-    // Default options are marked with *
     const response = await fetch('https://unexpected-meowing-swoop.glitch.me/cookies', {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
         credentials: 'include',
         headers: {
             'Content-Type': 'application/json'
-            // 'Content-Type': 'application/x-www-form-urlencoded',
         },
     });
     response.json().then(data => {
         console.log(data)
-        const answer = document.getElementById("answer");
-        const name = document.getElementById("name");
-        answer.textContent += `Welcome back,`;
-        name.textContent += `${data.name}...`;
+        if (data.name != undefined) {
+            const answer = document.getElementById("answer");
+            const name = document.getElementById("name");
+            answer.textContent += `Welcome back,`;
+            name.textContent += `${data.name}...`;
+        }
     });
 }
 ```
