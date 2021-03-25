@@ -355,17 +355,73 @@ patternMatch(getCookiePattern());
 <div class="flex-buttons">
 <button id="play-example10">checkCookie</button>
 <button id="play-example11">saveCookie</button>
-<button id="play-example12">deleteCookie</button>
-<button id="play-example13">getCookie</button>
-<button id="play-example14">Play!</button>
+<button id="play-example12">Reload page.</button>
+<button id="play-example13">deleteCookie</button>
+<button id="play-example14">getCookie</button>
+<button id="play-example15">Play!</button>
 
 </div>
 
 <script>
 document.getElementById("play-example10").addEventListener("click", () => checkCookie());
 document.getElementById("play-example11").addEventListener("click", () => saveCookie(inputName,savedSeedState));
-document.getElementById("play-example12").addEventListener("click", () => deleteCookie());
-document.getElementById("play-example13").addEventListener("click", () => console.log(getCookiePattern()));
-document.getElementById("play-example14").addEventListener("click", () => patternMatch(getCookiePattern()));
+document.getElementById("play-example12").addEventListener("click", () => location.reload());
+document.getElementById("play-example13").addEventListener("click", () => deleteCookie());
+document.getElementById("play-example14").addEventListener("click", () => console.log(getCookiePattern()));
+document.getElementById("play-example15").addEventListener("click", () => patternMatch(getCookiePattern()));
 </script>
 
+Now let's imagine we had a server, which coincidentally we do! It's right [here](https://glitch.com/edit/#!/unexpected-meowing-swoop?path=server.js%3A22%3A99). What we could now do is send this information over to that server, which responds by setting a third-party cookie in our browser, the stuff companies use to track us. Then imagine we had a second web-page as part of our artwork, which again we do right [here](https://laurens-in.github.io/cookie-test/). What we can now do is ask the server if we have set such a third party cookie, to which the server will respond: "yeah you actually do, here is it!". We could now use this to track the same user over different web-pages if we would like to do that.
+
+```js
+
+const serverData = { name: inputName, random_seed: JSON.stringify(savedSeedState) }
+
+// we will call this function on this page to send our information to the server
+async function postData(data) {
+    // Default options are marked with *
+    const response = await fetch('https://unexpected-meowing-swoop.glitch.me/cookie', {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+    response.json().then(data => console.log(data));
+
+}
+
+// we will use this function on the other page to retrieve the information
+async function getData() {
+    // Default options are marked with *
+    const response = await fetch('https://unexpected-meowing-swoop.glitch.me/cookies', {
+        method: 'GET', // *GET, POST, PUT, DELETE, etc.
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+    });
+    response.json().then(data => {
+        console.log(data)
+        const answer = document.getElementById("answer");
+        const name = document.getElementById("name");
+        answer.textContent += `Welcome back,`;
+        name.textContent += `${data.name}...`;
+    });
+}
+```
+
+<div class="flex-buttons">
+
+<button id="play-example16">Send cookie.</button>
+<button onclick="location.href='https://laurens-in.github.io/cookie-tester';" value="Open other page."></button>
+
+</div>
+
+<script>
+
+document.getElementById("play-example16").addEventListener("click", () => postData(serverData));
+</script>
